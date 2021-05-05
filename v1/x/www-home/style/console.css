@@ -1,0 +1,40 @@
+/* CONSOLE.CSS */
+
+
+
+/* ===== CONSOLE ===== */
+#console-wrapper {
+  font-family: "courier new", courier, mono;
+  position: absolute;
+  top: 5px; right: 5px;
+  background: #ddd;
+  border: 1px solid #fff;
+  z-index: 9998;
+}
+
+#console {
+  width: 800px;
+  font-family: "courier new", courier, mono;
+  font-size: 10px;
+  color: #0f0;
+  background: #030;
+  padding: 3px;
+  padding-top: 11px;
+  overflow: auto;
+  margin: 0px;
+}
+
+
+#console-tools {
+  position: absolute;
+  top: 5px; right: 5px;
+  z-index: 9999;
+}
+
+
+#console-tools a {
+  color: #ff0;
+  margin: 3px;
+  text-decoration: none;
+  font-size: 8px;
+}

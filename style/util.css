@@ -1,0 +1,55 @@
+/* UTIL.CSS */
+
+
+/* --------------------------------------------------- HTML EMU */
+.center {text-align:center !important;}
+.right  {text-align:right !important;}
+.left   {text-align:left !important;}
+.top    {vertical-align:top !important;}
+.middle {vertical-align:middle !important;}
+.bottom {vertical-align:bottom !important;}
+.float-left  {float:left !important;}
+.float-right {float:right !important;}
+.bold   {font-weight:bold !important;}
+.normal {font-weight:normal !important;}
+.italic {font-style:italic !important;}
+.underline {text-decoration:underline !important;}
+.uppercase  {text-transform:uppercase !important;}
+.lowercase  {text-transform:lowercase !important;}
+.capitalize {text-transform:capitalize !important;}
+.nowrap {white-space:nowrap !important;}
+.border-collapse {border-collapse:collapse !important;}
+.inline {display:inline !important;}
+.inline-block {display:inline-block !important;}
+.block {display:block !important;}
+.none {display:none !important;}
+.clear-right {clear:right !important;}
+.clear-left  {clear:left !important;}
+.clear-none  {clear:none !important;}
+.clear-both  {clear:both !important;}
+
+.a {cursor: pointer;}
+
+/* --------------------------------------------------- SMALL */
+small, .small,
+.small p, .small a, .small em,
+.small li, .small ul,
+.small code, .small pre,
+.small table, .small tr, .small td, .small th,
+.small span,
+.small select, .small option, .small input, .small textarea
+{font-size:x-small;}
+
+
+/* ==== LIST ==== */
+ul.flush, ul.flush > li {padding:0px;margin:0px;list-style-type:none;}
+ul.stack {padding:0px;margin:0px;list-style-type:none;}
+ul.bar {padding:0px;margin:0px;list-style-type:none;}
+ul.bar > li {float:left;list-style-type:none;}
+ul.bar.left > li {margin-right:5px;}
+
+
+/* --------------------------------------------------- STATE */
+.HIDE {
+  display: none;
+}

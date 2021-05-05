@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<!--                   _               _ _
+                     _| |___ _ _ ___  |_| |___ ___
+                    | . | . | | | . | | | | -_| -_|
+                www.|___|___|___|_  |_| |_|___|___|.com
+                                |___|___|
+-->
+<head>
+<meta charset="UTF-8">
+<title>DLX: The Doug Lee Experience</title>
+
+
+<meta property="og:title" content="The Doug Lee Experience" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.dougjlee.com" />
+<meta property="og:image" content="http://www.dougjlee.com/img/dlx-icon.png" />
+<meta property="og:site_name" content="DLX: Doug Lee Experience" />
+<meta property="fb:app_id" content="160017430679750" />
+<meta property="og:description"
+      content="The portfolio of Doug Lee" />
+
+
+<!--[if IE]>
+<script>
+(function(){var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})();
+</script>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+
+<script src="script/json2.min.js"></script>
+<script src="script/jquery.cookiecombo.min.js"></script>
+
+<script src="script/jquery.livequery.min.js"></script>
+<script src="script/jquery.hoverintent.js"></script>
+<script src="script/jquery.tip.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="script/shadowbox/shadowbox.css"/>
+<script src="script/shadowbox/shadowbox.js"></script>
+<script>
+Shadowbox.init({
+  handleOversize: 'drag',
+  skipSetup: true
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="style/base.css"/>
+<link rel="stylesheet" type="text/css" href="style/util.css"/>
+<link rel="stylesheet" type="text/css" href="style/custom.css"/>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12625162-1']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(function() {
+    //var pageTracker = _gat._getTracker('UA-12625162-1');
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+</script>
+
+</head>
+<body>
+
+
+<header class="HIDE">
+  <img id="home-logo" src="img/home-logo.png" width="960" height="45" />
+</header>
+
+
+<!-- div id="loader" class="noti loading">loading data ...</div -->
+
+<ul id="display" class="bar HIDE">
+  <li class="label" id="do-la">Display options</li>
+  <li class="option HIDE" id="do-sr">Suppress rollover</li>
+  <li class="option suboption HIDE" id="do-srcap">Caption</li>
+  <li class="option suboption HIDE" id="do-srcon">Contribution</li>
+  <li class="option HIDE" id="do-rt">Remove tags</li>
+</ul>
+
+<div class="HIDE" id="aside-shroud">
+  <aside>
+    <div id="aside-header">
+      <div id="floater-toggle" class="floater-hide"></div>
+    </div>
+    <ul id="aside-nav" class="bar">
+      <li id="contact" title="frag-contact.html">Contact</li>
+      <li id="about" title="frag-about.html">About</li>
+      <li id="share" title="frag-share.html">Share</li>
+    </ul>
+    <div id="aside-content"></div>
+  </aside>
+</div>
+
+
+
+<div id="theatre">
+  <div id="stage">
+    <div id="mask">
+
+<script>
+// XXX: refactor whole mess
+$('#display').hoverIntent(
+  function() {
+    $('#display').css('background-color','#bdd2e6').animate({backgroundColor: '#d7e4f1'}, 700);
+  },
+  function() {
+    $('#display').animate({backgroundColor: '#bdd2e6'}, 700, 'swing', function() {
+$(this).css('background-color','transparent');
+    });
+  }
+);
+
+
+
+// XXX: cookify
+$('#display > li').each(function() {
+  $(this).data('stat', 0);
+});
+
+$('#do-la').click(function() {
+  var _this = $(this);
+  if(_this.data('stat') == 0) {
+    if($('#do-sr').data('stat') == 0) {
+      $('#display > .option:not(.suboption)').fadeIn();
+    }
+    else {
+      $('#display > .option').fadeIn();
+    }
+    C.out('expanding display options');
+    _this.data('stat', 1);
+  }
+  else {
+    $('#display > .option').fadeOut();
+    C.out('minifying display options');
+    _this.data('stat', 0);
+  }
+});
+
+$('#do-sr').click(function() {
+  var _this = $(this);
+  if(_this.data('stat') == 0) {
+    $(this).addClass('checked');
+    $('.node').unbind('mouseover');
+    $('#display > .suboption').fadeIn();
+    C.out('disabling rollovers');
+    _this.data('stat', 1);
+  }
+  else {
+    $(this).removeClass('checked');
+    $('.node').each(function() {
+      NODR.rebind($(this));
+    });
+    $('.suboption').each(function() {
+      if($(this).data('stat')==1) $(this).click();
+    });
+    $('#display > .suboption').fadeOut();
+    C.out('enabling rollovers');
+    _this.data('stat', 0);
+  }
+});
+
+$('#do-srcap').click(function() {
+  var _this = $(this);
+  if(_this.data('stat') == 0) {
+    $(this).addClass('checked');
+    $('.thumb-frame > p').slideDown();
+    C.out('showing captions');
+    _this.data('stat', 1);
+  }
+  else {
+    $(this).removeClass('checked');
+    $('.thumb-frame > p').slideUp();
+    C.out('hiding captions');
+    _this.data('stat', 0);
+  }
+});
+
+$('#do-srcon').click(function() {
+  var _this = $(this);
+  if(_this.data('stat') == 0) {
+    $(this).addClass('checked');
+    $('.cloud').slideDown();
+    C.out('showing contributions');
+    _this.data('stat', 1);
+  }
+  else {
+    $(this).removeClass('checked');
+    $('.cloud').slideUp();
+    C.out('hiding contributions');
+    _this.data('stat', 0);
+  }
+});
+
+$('#do-rt').click(function() {
+  var _this = $(this);
+  if(_this.data('stat') == 0) {
+    $(this).addClass('checked');
+    $('.typetag').fadeOut();
+    C.out('hiding tags');
+    _this.data('stat', 1);
+  }
+  else {
+    $(this).removeClass('checked');
+    $('.typetag').fadeIn();
+    C.out('showing');
+    _this.data('stat', 0);
+  }
+});
+</script>
+
+
+<style>
+.red {color:red!important;}
+#display {
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  font-size: 10px;
+  padding: 5px 7px;
+  z-index: 99;
+  background-color: #bdd2e6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  z-index: 100;
+}
+#display[class ~= hover] {
+/*
+  background-color: rgba(255,255,255,.4) !important;
+  background-color: #eef;
+*/
+}
+#display > li {
+  text-transform: none;
+}
+#display > .label {
+  text-transform: uppercase;
+  padding-left: 21px;
+  background: transparent url('img/spritesheet.png') -10px -1169px no-repeat;
+}
+#display > .option {
+  color: #999;
+  padding-left: 20px;
+  background: transparent url('img/spritesheet.png') -481px -1167px no-repeat;
+}
+#display > .option:hover {
+  color: #666;
+}
+#display > .option.checked {
+  color: #666;
+  background-position: -481px -1187px;
+}
+</style>
+
+
+
+
+      <div id="canvas"></div>
+      <ul id="pan-message" class="bar HIDE">
+        <li id="pan-left"></li>
+        <li id="pan-text" class="center">Click and drag in empty area to pan canvas</li>
+        <li id="pan-right"></li>
+      </ul>
+
+    </div><!-- /mask -->
+  </div><!-- /stage -->
+
+  <footer class="HIDE">
+    <div id="output" class="">[dlx:] $</div>
+  </footer>
+
+</div><!-- /theatre -->
+
+
+
+
+<script src="data/nodes.js"></script>
+<script>
+// --------------------------------------------------- PLUGS
+// jquery wait plugin
+$.fn.wait = function(time, type) {
+  time = time || 1000;
+  type = type || "fx";
+  return this.queue(type, function() {
+    var self = this;
+    setTimeout(function() {
+      $(self).dequeue();
+    }, time);
+  });
+};
+
+// disable selection
+$.extend($.fn.noSelect = function() {
+  return this.each(function(){
+    if($.browser.mozilla){//Firefox
+      $(this).css('MozUserSelect','none');
+    }else if($.browser.msie){//IE
+      $(this).livequery('selectstart',function(){return false;});
+    }else{//Opera, etc.
+      $(this).mousedown(function(){return false;});
+    }
+  });
+});
+
+
+// --------------------------------------------------- DOC READY
+$(function() {
+  $('#canvas, #aside-nav, header, footer, #pan-message, #display').noSelect();
+
+  // ready steady go
+  $('header').show('slide', {direction:'up',easing:'easeOutBounce'}, 500, function() {
+    $('footer').fadeIn('slow');
+    C.out('loading ...');
+    FLOTR.init();
+    NODR.init();
+    FOOTR.init();
+  });
+
+  // message on shadowbox for draggable images
+  $('#sb-drag-layer').livequery(function() {
+    $('<div>')
+      .attr({id: 'drag-message', 'class': 'HIDE'})
+      .prependTo($('#sb-body'))
+      .show('slide', {easing: 'easeOutBounce'}, 500, function() {
+          $(this).wait(2000).fadeOut('slow', function(){$(this).remove();});
+      });
+  });
+});
+
+
+// --------------------------------------------------- CONSOLE
+var C = function() { return {
+  C: {
+    sep: '&nbsp;&middot;&nbsp;',
+    prompt: '[dlx:] $ '
+  },
+  out: function(val) {
+    $('#output').html(C.C.prompt + val);
+  },
+  add: function(val) {
+    $('#output').append(val);
+  },
+  clear: function(val) {
+    $('#output').empty();
+  }
+}}(); // END CONSOLE
+
+var c = function() { return {
+  c: {
+    sep: '&nbsp;&middot;&nbsp;',
+    prompt: '[fb:] $ '
+  },
+  out: function(val) {
+    $('#c').html(c.c.prompt + val + '<br />');
+  },
+  add: function(val) {
+    $('#c').append(val);
+  },
+  clear: function(val) {
+    $('#c').empty();
+  }
+}}(); // END CONSOLE
+
+
+
+// --------------------------------------------------- NODE CREATOR
+var NODR = function() { return {
+  nodes: NODES,  // loaded from data file
+  z: 30,
+
+  rebind: function(node) { // cannot use func name 'bind'
+      node.hoverIntent(
+        function() {
+          node.css('z-index', ++NODR.z);
+          node.children('.drag-me').fadeIn('fast');
+          node.children('.click-me').fadeIn('fast');
+          //node.children('.drag-me').show('puff', {}, 100);
+          //node.children('.click-me').show('puff', {}, 100);
+          node.find('.drag-handle').addClass('over');
+          node.find('.thumb-frame > p').slideDown('fast');
+          node.find('.cloud').slideDown('fast');
+          C.out('focus node: ' + node.data('meta').title);
+        },
+        function() {
+          node.children('.drag-me').fadeOut('fast');
+          node.children('.click-me').fadeOut('fast');
+          node.find('.drag-handle').removeClass('over');
+          node.find('.thumb-frame > p').slideUp('slow');
+          node.find('.cloud').slideUp('slow', function() {
+            // saving throw vs bad mouseout sticking
+            node.children('.drag-me').fadeOut('fast');
+            node.children('.click-me').fadeOut('fast');
+          });
+        }
+      );
+  },
+
+  init: function() {
+    // create nodes
+    //this.make();
+
+    // bindings
+    $('.node').livequery(function() {
+      var node = $(this);
+
+      NODR.rebind(node);
+
+      node.draggable({
+        handle: '.drag-handle, h2',
+        containment: 'parent',
+        start: function(ev, ui) {
+          $('#canvas')
+            .unbind('mousedown').unbind('mousemove').unbind('mouseup');
+            C.out('dragging node: ' + node.data('meta').title);
+        },
+        drag: function(ev, ui) {
+          //node.children('.drag-me').show();
+        },
+        stop: function(ev, ui) {
+          PANR.dragPan();
+          C.out('dragged: ' + node.data('meta').title + C.C.sep
+            + ' x: ' + node.position().left
+            + C.C.sep
+            + ' y: ' + node.position().top
+          );
+        }
+      });
+    });
+  },
+
+  make: function() {
+    $('#canvas').hide();
+    var x; var y; var r;
+
+    $.each(NODR.nodes, function(i, val) {
+      var _this = this;
+      // pos calc
+      r = Math.floor(Math.random() * 11);
+      y = r;
+      r = Math.floor(Math.random() * 31);
+      x = x + r;
+      r = Math.floor(Math.random() * 31);
+      if(i % 2 == 1) y = 280 + r;
+      r = Math.floor(Math.random() * 31);
+      if(i % 2 == 0) x = (i*140) + r + 330;
+
+      // node container
+      var node = $('<div>')
+        .attr('class', 'node')
+        .css({left: x, top: y})
+        .data('meta', {'title': this.title})
+        .appendTo('#canvas');
+
+      $('<div>').attr('class', 'drag-me HIDE').appendTo(node);
+      $('<div>').attr('class', 'typetag ' + this.type).appendTo(node);
+      var h2 = $('<h2>').html(this.title).appendTo(node);
+      $('<span>').attr('class', 'drag-handle').prependTo(h2);
+
+      // thumb
+      var thumbFrame = $('<div>')
+        .attr('class', 'thumb-frame')
+        .click(function() {
+          Shadowbox.open({
+            content: 'data/' + _this.name + '.png',
+            player: 'img',
+            title: _this.title,
+            options: {
+                viewportPadding: 30,
+                overlayOpacity: .7,
+                fadeDuration: .1
+              }
+          });
+          C.out('launched shadowbox for: ' + _this.title);
+          return false;
+        })
+        .appendTo(node);
+
+      var img = $('<img>')
+        .attr({
+          src: 'data/' + this.name + '-tmb.png',
+          border: 0,
+          'class': 'thumb' // IE needs quotes
+        })
+        .appendTo(thumbFrame);
+
+      $('<p>')
+        .attr('class', 'HIDE')
+        .html(this.descr)
+        .appendTo(thumbFrame);
+
+      $('<div>')
+        .attr('class', 'click-me HIDE')
+        .appendTo(node);
+
+      // cloud
+      var cloud = $('<div>').attr('class', 'cloud HIDE').appendTo(thumbFrame);
+      $('<span>').attr('class', 'tag label').html('What I did').appendTo(cloud);
+      for (var j=0; j<this.tags.length; j++) {
+        var tag = $('<span>').attr('class', 'tag').html(this.tags[j]).appendTo(cloud);
+      }
+      $('<span>').attr('class', 'tag label').html('What I used').appendTo(cloud);
+      for (var j=0; j<this.tools.length; j++) {
+        var tag = $('<span>').attr('class', 'tag tools').html(this.tools[j]).appendTo(cloud);
+      }
+
+      // all nodes created before canvas reveal
+      if(i == NODR.nodes.length - 1) NODR.ready = true;
+    });
+
+    // wait for it ...
+    NODR.wait();
+  },
+
+  ready: false,
+
+  wait: function() {
+    setTimeout(function() {
+      if (NODR.ready) {
+        NODR.present();
+        return false;
+      }
+      else (NODR.wait());
+    }, 2000);
+  },
+
+  present: function() {
+    C.out('loading complete');
+    $('#loader').append(' DONE!')
+      .wait(700).fadeOut('slow', function() {
+        $('aside').fadeIn('slow', function() {
+          $('#aside-shroud').fadeIn('slow');
+          C.out('UI initialized');
+        });
+        $('#canvas')
+          .show('drop', {direction:'left',easing:'easeOutBounce'}, 1000)
+          .effect('bounce', {times:2,distance:50,direction:'right'}, 400,
+            function() {
+              PANR.init();
+              C.out('ready');
+            }
+          );
+    });
+  }
+}}(); // END NODR
+
+
+// --------------------------------------------------- PANNER
+var PANR = function() { return {
+  init: function() {
+    this.dragPan();
+
+    // handle pan message
+    $('#pan-message, #display').fadeIn('slow');
+
+    $('#pan-message').mouseover(function() {
+      setTimeout(function() {
+        $('#pan-message').fadeOut('slow', function() {
+          $('#mask').unbind();
+          $('#pan-message').unbind();
+          $('#pan-message').remove();
+        });
+      }, 500);
+    });
+
+    $('#mask').click(function() {
+      $('#pan-message').fadeOut('slow', function() {
+        $('#mask').unbind();
+        $('#pan-message').unbind();
+        $('#pan-message').remove();
+      });
+    });
+
+    setTimeout(function() {
+      $('#pan-message').fadeOut('slow', function() {
+        $('#mask').unbind();
+        $('#pan-message').unbind();
+        $('#pan-message').remove();
+      });
+    }, 8000);
+  },
+
+  dragPan: function() {
+    var drag;
+    var dragX;
+    var canvas = $('#canvas');
+    var canvasX;
+    var canvasPos = 0;
+    var canvasWidth = $('#canvas').outerWidth();
+    var dragExtent = {min: 100, max: canvasWidth - 1200}
+    canvas
+      .mousedown(function(e) {
+          dragX = e.clientX;
+          canvasX = canvas.offset().left;
+          drag = true;
+      })
+      .mousemove(function(e) {
+        if (drag) {
+          var delta = e.clientX - dragX;
+          if(Math.abs(delta) > 40) {
+            canvasPos = canvasX + delta;
+            if (canvasPos < -dragExtent.max) {
+              canvasPos = -dragExtent.max;
+              C.out('canvas maximum extent');
+              return false;
+            }
+            if (canvasPos > dragExtent.min) {
+              canvasPos = dragExtent.min;
+              C.out('canvas min extent');
+              return false;
+            }
+            canvas.css('left', canvasX + delta);
+          }
+        }
+      })
+      .mouseup(function(e) {
+        //$('#output').html(canvasPos + ' | ' + canvasWidth + ' | ' + dragExtent.max);
+        C.out('canvas transform' + C.C.sep
+          + 'pos: ' + canvasPos + C.C.sep + 'distance: ' + (e.clientX - dragX));
+        drag = false;
+      });
+  }
+}}(); // END PANR
+
+
+// --------------------------------------------------- FOOTER
+var FOOTR = function() { return {
+  items: FOOTBAR,
+  init: function() {
+    this.make();
+  },
+  make: function() {
+    // node container
+    var footbar = $('<ul>')
+      .attr({'class':'bar',id:'footbar'})
+      .appendTo('footer');
+
+    var p = footbar // parent
+    $.each(FOOTR.items, function(i, val) {
+      var item = $('<li>')
+        .attr('id', this.id)
+        .appendTo(p);
+
+      // separator
+      if(this.css) {
+        item.attr('class',this.css);
+        item.removeAttr('id');
+      }
+      // spacer
+      $('<li>').attr('class','spacer').appendTo(p);
+
+      var opts = {
+        id: this.id
+      }
+      if(this.tipText) { opts.tipText=this.tipText; }
+      if(this.url) { opts.url=this.url; }
+      item.tip(opts);
+    });
+  }
+}}(); // END FOOTR
+
+
+// --------------------------------------------------- FLOATER
+var FLOTR = function() { return {
+  init: function() {
+    // entire header minifies
+    $('#aside-header').click(function() {
+      if(FLOTR.state.expanded) FLOTR.hide()
+      else FLOTR.show();
+    });
+
+    $('#aside-nav > li').click(function() {
+      FLOTR.display($(this));
+    });
+
+    // default tab
+    this.state.active = $('#contact');
+    $('#contact').attr('class','on');
+    $('#aside-content').load($('#contact').attr('title'));
+  },
+
+  state: {
+    expanded: true,
+    active: null
+  },
+
+  display: function(item) {
+    var active = this.state.active;
+    if(item.attr('id') == active.attr('id')) return;
+
+    active.removeClass('on');
+    this.state.active=item;
+    item.addClass('on');
+
+    if(!this.state.expanded) {
+        $('#aside-content').hide().load(item.attr('title'), null, function() {
+          $('#aside-content').show().css('opacity',0);
+          var h = $('#aside-content > .frag-wrapper').outerHeight();
+          $('#aside-content').css('height',h);
+          FLOTR.show();
+          $('#aside-content').css('opacity',1);
+        });
+
+    }
+    else {
+      $('#aside-content').animate({'height':0}, 'fast', 'swing', function() {
+        $('#aside-content').hide().load(item.attr('title'), null, function() {
+          $('#aside-content').show().css('opacity',0);
+          var h = $('#aside-content > .frag-wrapper').outerHeight();
+          $('#aside-content').animate({'height': h}, 'slow').css('opacity',1);
+        });
+      });
+    }
+    C.out('loading tab: ' + item.attr('id'));
+  },
+
+  hide: function() {
+    $('#aside-content').hide('blind', {direction:'vertical'}, 300);
+    $('#aside-shroud').animate({top:'82px'}, 300);
+    $('aside').animate({paddingTop:'50px'}, 200);
+    $('#floater-toggle').attr('class','floater-show');
+    this.state.expanded = false;
+    C.out('minify floater');
+  },
+
+  show: function() {
+    $('#aside-content').show('blind', {direction:'vertical'}, 300);
+    $('#aside-shroud').animate({top:'100px'}, 300);
+    $('aside').animate({paddingTop:'50px'}, 200);
+    $('#floater-toggle').attr('class','floater-hide');
+    this.state.expanded = true;
+    C.out('expand floater');
+  }
+}}(); // END FLOTR
+
+</script>
+
+
+<!--[if IE]>
+<style>
+/* IE needs bg property set to attach dragPan after jq effects */
+#canvas {
+  background: #dcdefd url('img/sky-bg.png') 0 -45px repeat-x;
+}
+.frag-wrapper {
+  padding-top: 20px;
+}
+</style>
+<![endif]-->
+
+
+<style>
+#sandbox {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  z-index: 9999;
+}
+#c {
+  width: 800px;
+  background: #eef;
+  padding: 10px;
+  border: 1px solid #66c;
+  white-space: pre-line;
+}
+</style>
+
+
+
+          <div id="sandbox">
+
+
+<pre id="c"></pre>
+
+
+<!-- fb:login-button></fb:login-button -->
+<fb:like href="http://www.dougjlee.com" width="450" height="80"/>
+
+<br />
+<img id="fb-image" src="https://graph.facebook.com/me/picture"/>
+<br />
+
+<a id="fb-postit">POST TO YOUR WALL</a>
+<br />
+message: <input type="text" id="fb-message" />
+<br />
+caption: <input type="text" id="fb-caption" />
+<br />
+link: <input type="text" id="fb-link" />
+<br />
+description: <input type="text" id="fb-description" />
+<br />
+name: <input type="text" id="fb-name" />
+          </div>
+
+
+
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: '160017430679750', status: true, cookie: true,
+             xfbml: true});
+
+    /* All the events registered */
+    FB.Event.subscribe('auth.login', function(response) {
+        // do something with response
+$('#c').html('login: ' + response.name);
+    });
+
+    FB.Event.subscribe('auth.logout', function(response) {
+        // do something with response
+$('#c').html('logout: ' + response.name);
+    });
+
+    FB.getLoginStatus(function(response) {
+        if (response.session) {
+            // logged in and connected user, someone you know
+c.out('status: ' + JSON.stringify(response.session));
+        }
+    });
+
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+
+
+<script>
+
+
+    $("input").keyup(function () {
+      var value = $(this).val();
+      $(this).data('body', value);
+    }).keyup();
+
+
+$('#fb-postit').click(function(){
+  FB.api('/me/feed', 'post', {
+    message: $('#fb-message').data('body'),
+    link: $('#fb-link').data('body'),
+    name: $('#fb-name').data('body'),
+    description: $('#fb-description').data('body'),
+    caption: $('#fb-caption').data('body')
+  }, function(response) {
+    if (!response || response.error) {
+      c.out('bummer, couldnt hang');
+    } else {
+      c.out(JSON.stringify(response));
+    }
+  });
+});
+
+
+
+$('#fb-image').click(function() {
+
+c.out('trying');
+
+
+FB.api('/me', function(response) {
+  c.out(JSON.stringify(response));
+});
+
+
+/*
+FB.api('/duggiwuggi/posts', { limit: 3 }, function(response) {
+  for (var i=0, l=response.length; i<l; i++) {
+    var post = response[i];
+    if (post.message) {
+c.add(post.message)
+    } else if (post.attachment && post.attachment.name) {
+    }
+  }
+});
+*/
+
+/*
+https://graph.facebook.com/oauth/authorize?
+    client_id=...&
+    redirect_uri=http://www.example.com/callback&
+    type=user_agent&
+    display=popup
+*/
+
+
+  FB.login(function(response) {
+    if (response.session) {
+      if (response.perms) {
+c.out(JSON.stringify(response.perms));
+      } else {
+        // user is logged in, but did not grant any permissions
+c.out('no perms');
+      }
+    } else {
+c.out('no session');
+    }
+  }, {perms:'read_stream,publish_stream,offline_access'});
+
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>

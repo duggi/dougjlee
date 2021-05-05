@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>SuccessFactors: Analytics Concept Car</title>
+
+  <link type="text/css" rel="stylesheet" href="style/base.css" />
+  <link type="text/css" rel="stylesheet" href="style/util.css" />
+  <link type="text/css" rel="stylesheet" href="style/custom.css" />
+
+  <script type="text/javascript" src="js/prototype/prototype-1.6.0.2.js"></script>
+  <script type="text/javascript" src="js/scriptaculous/scriptaculous-js-1.8.1/src/scriptaculous.js"></script>
+
+  <!-- GLIDER -->
+  <script type="text/javascript" src="js/misc/glider.js"></script>
+  <link type="text/css" rel="stylesheet" href="style/glider.css" />
+
+
+  <!-- LIGHTBOX WILD -->
+  <script type="text/javascript" src="js/misc/lightbox-wild.js"></script>
+  <link type="text/css" rel="stylesheet" href="style/lightbox-wild.css" />
+
+
+  <script type="text/javascript">
+// HARDWIRED
+function switchDimension(el) {
+  new Effect.Grow('axis-x-menu', {direction:'top-right', duration:.5});
+  $('axis-x-menu').observe('click', function(){
+         new Effect.Shrink('axis-x-menu', {direction:'top-right', duration:.5})
+                                    });
+}
+function toggleAlertMenu() {
+  new Effect.Grow('alert-menu', {direction:'top-left', duration:.5});
+  $('alert-menu').observe('click', function(){
+         new Effect.Shrink('alert-menu', {direction:'top-left', duration:.5})
+                               });
+}
+
+
+function setTopoStyle(el) {
+  //topoStyle=='-dim'?topoStyle='-brite':topoStyle='-dim'; morphMap(curVal);
+  if(topoStyle=='-dim') {
+    topoStyle='-brite';
+    el.src='images/topo-switcher.gif';
+  } else {
+    topoStyle='-dim';
+    el.src='images/topo-switcher-grey.gif';
+  }
+  morphMap(curVal);
+}
+
+// number formatting function
+// copyright Stephen Chapman 24th March 2006, 10th February 2007
+// permission to use this function is granted provided
+// that this copyright notice is retained intact
+
+function formatNumber(num,dec,thou,pnt,curr1,curr2,n1,n2) {var x = Math.round(num * Math.pow(10,dec));if (x >= 0) n1=n2='';var y = (''+Math.abs(x)).split('');var z = y.length - dec; if (z<0) z--; for(var i = z; i < 0; i++) y.unshift('0');y.splice(z, 0, pnt); if(y[0] == pnt) y.unshift('0'); while (z > 3) {z-=3; y.splice(z,0,thou);}var r = curr1+n1+y.join('')+n2+curr2;return r;}
+
+
+    </script>
+
+<script type="text/javascript">
+var c=0;
+var t;
+function pulse() {
+  //Effect.Pulsate('perfscape-caller',{from:'.7'});
+  $('perfscape-caller').morph({opacity: '0.3'},{duration: .25});
+  t=setTimeout("pulse()",5000);
+}
+</script>
+
+<script>
+var preloader =
+['topo-2004.1.gif','topo-2004.2.gif','topo-2004.3.gif','topo-2004.4.gif','topo-2004.5.gif','topo-2004.6.gif','topo-2004.7.gif','topo-2004.8.gif','topo-2004.9.gif','topo-2004.gif','topo-2005.1.gif','topo-2005.2.gif','topo-2005.3.gif','topo-2005.4.gif','topo-2005.5.gif','topo-2005.6.gif','topo-2005.7.gif','topo-2005.8.gif','topo-2005.9.gif','topo-2005.gif','topo-2006.1.gif','topo-2006.2.gif','topo-2006.3.gif','topo-2006.4.gif','topo-2006.5.gif','topo-2006.6.gif','topo-2006.7.gif','topo-2006.8.gif','topo-2006.9.gif','topo-2006.gif','topo-2007.gif']
+
+var preload = new Array();
+
+function preloadIt(p) {
+  for (i=0; i<preloader.length; i++) {
+    preload[i] = new Image();
+    preload[i].src = p + preloader[i];
+    //document.write(preloader[i] + ' | ')
+    //document.write(preload[i].src + ' | ');
+  }
+}
+
+
+var path = "images/topo-brite/";
+preloadIt(path);
+var path = "images/topo-dim/";
+preloadIt(path);
+
+</script>
+
+
+</head>
+<body id="body"><div id="outermost">
+
+<!-- ***** START PAGE **************************************************** -->
+
+<a href="#" onclick="setTopoStyle()"><small>bright/dim toggle</small></a>
+
+
+
+<!-- ** MORE BUTTON ** -->
+<a href="dbrowser.html" class="lbOn">
+<img border="0" src="images/dbrowser-invoke-button.png" id="dashboard-browser-button"
+      class="pointer"
+      onfocus="blur()" />
+</a>
+
+
+
+<!-- ** TOPO ** -->
+          <div id="topo">
+
+
+<!-- ** SWITCHER ** -->
+<img border="0" src="images/topo-switcher-grey.gif"
+     style="position:relative;top:-17px;left:354px;"
+     class="pointer"
+     onclick="setTopoStyle(this)" />
+
+
+<!-- ** LISTENER ** -->
+<div id="listener" style="position:relative;top:-23px;">
+Headcount: <span id="headcount">78,567</span>
+</div>
+
+
+<!-- ** SLIDER ** -->
+<div id="slider">
+  <div id="track"><div id="handle"></div></div>
+  <code id="tail" style="display:none;">from:2007</code>
+  <div id="track-years"></div>
+</div>
+
+
+
+<!-- ** AXIS LABELS ** -->
+<img border="0" src="images/axis-x.png" id="axis-x"
+      class="pointer" onclick="switchDimension(this)" />
+<img border="0" src="images/axis-y.png" id="axis-y" class="pointer" />
+<img border="0" src="images/axis-z.png" id="axis-z" class="pointer" />
+
+<div id="axis-x-menu" style="display:none;position:absolute;top:119px;left:348px;" class="pointer"><img border="0" src="images/axis-x-menu.png" /></div>
+          </div>
+
+
+
+<!-- ** RIGHT RAIL ** -->
+          <div id="right-rail" class="small-pad-top">
+
+
+
+<!-- ** GLIDER ** -->
+          <div id="glider" class="relative">
+
+<!-- controls -->
+<img border="0" src="images/carousel-arrow-left.png" id="carousel-arrow-left"
+     onclick="glider.previous(); return false;" />
+<img border="0" src="images/carousel-arrow-right.png" id="carousel-arrow-right"
+     onclick="glider.next(); return false;" />
+
+<!-- control links -->
+<div class="controls">
+<ul class="flatten">
+<li><img border="0" src="images/carousel-cap-left.png" /></li>
+<li class="carousel-nav"><div class="small-pad-top">
+  <a href="#section1" onfocus="blur()" id="status-graph"
+     class="CONTROL-LINK">Succession</a>
+  |
+  <a href="#section2" onfocus="blur()" id="homepage"
+     class="CONTROL-LINK">Workforce</a>
+  |
+  <a href="#section3" onfocus="blur()" id="map"
+     class="CONTROL-LINK">Financial</a>
+</div></li>
+<li><img border="0" src="images/carousel-cap-right.png" /></li>
+</ul>
+</div>
+<!-- end controls -->
+
+<br clear="all" />
+
+<!-- scroller -->
+<div class="scroller"><div class="content">
+
+  <!-- SECTION 1 -->
+  <div class="section" id="section1">
+
+<style>
+#alert-menu-caller {
+  position: absolute;
+  top: 70px;
+  left: 13px;
+}
+#more-plan-risk-caller {
+  position: absolute;
+  top: 159px;
+  left: 290px;
+}
+#more-plan-risk {
+  position: absolute;
+  top: 175px;
+  left: 9px;
+}
+</style>
+
+<script>
+function toggleMorePlanRisk() {
+  if($('more-plan-risk').hasClassName('MORE')) {
+    Effect.BlindDown('more-plan-risk');
+    $('more-plan-risk-caller').src='images/less.png';
+    $('more-plan-risk').addClassName('LESS').removeClassName('MORE');
+  } else {
+    Effect.BlindUp('more-plan-risk');
+    $('more-plan-risk-caller').src='images/more.png';
+    $('more-plan-risk').addClassName('MORE').removeClassName('LESS');
+  }
+}
+</script>
+<img id="alert-menu-caller" border="0" width="40" height="25" src="images/blank.gif"
+     class="pointer" onclick="toggleAlertMenu()" />
+<div id="alert-menu" style="display:none;position:absolute;top:69px;left:9px;z-index:999;"
+     class="pointer"><img border="0" src="images/alert.png" /></div>
+
+<img id="more-plan-risk-caller" border="0" width="40" height="15" src="images/more.png"
+     class="pointer" onclick="toggleMorePlanRisk()" />
+<div id="more-plan-risk" class="MORE" style="display:none;"><div><img
+     border="0" src="images/more-plan-risk.png" /></div>
+</div>
+
+<img border="0" src="images/sidebar-0.png" />
+  </div>
+  <!-- END SECTION 1 -->
+
+  <div class="section" id="section2"><img border="0" src="images/sidebar-1.png" /></div>
+  <div class="section" id="section3"><img border="0" src="images/sidebar-2.png" /></div>
+</div></div>
+<!-- end scroller -->
+
+          </div><!-- END GLIDER -->
+
+
+          </div><!-- END RIGHT RAIL -->
+
+
+
+
+
+
+<!-- ** END SCRIPTS ****************************************************** -->
+          <script type="text/javascript" language="javascript">
+
+
+// -- SLIDER ------------------------------------
+var preVal = 2007;
+var curVal = 2007;
+var topoStyle = '-dim';
+
+new Control.Slider('handle', 'track', {
+  range:  $R(2004, 2007),
+  values: [2004,2004.1,2004.2,2004.3,2004.4,2004.5,2004.6,2004.7,2004.8,2004.9,
+           2005,2005.1,2005.2,2005.3,2005.4,2005.5,2005.6,2005.7,2005.8,2005.9,
+           2006,2006.1,2006.2,2006.3,2006.4,2006.5,2006.6,2006.7,2006.8,2006.9,
+           2007],
+  sliderValue: 2007,
+  //onSlide:  function(v){ preVal=v; morphMap(v); $('tail').innerHTML = 'from:' + curVal + ' to:' + v },
+  onSlide:  function(v){ preVal=v; morphMap(v); $('headcount').innerHTML =
+formatNumber(Math.round(v*39 + Math.floor(Math.random()*3100)),0,',','','','','-','') },
+  onChange: function(v){ curVal=v; }
+});
+
+function morphMap(val) {
+  $('topo').style.backgroundImage = 'url(images/topo' + topoStyle + '/topo-' + val + '.gif)';
+}
+
+// -- GLIDER ------------------------------------
+var glider = new Glider('glider', {duration: .5});
+
+          </script>
+
+
+
+
+
+
+<!-- **** END PAGE ******************************************************* -->
+<img border="0" src="images/blank.gif" style="position:absolute;top:750px;"/></div></body></html>
+

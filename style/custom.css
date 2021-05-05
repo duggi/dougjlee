@@ -1,0 +1,530 @@
+/* CUSTOM.CSS */
+
+
+/* --------------------------------------------------- BASE */
+html, body {
+  height: 100%;       /* magic ingredient */
+  overflow: hidden;   /* removes browser scrollbar */
+  background: #ddd;
+}
+
+body {
+  background: #dcdefd url('../img/sky-bg.png') 0 0 repeat-x;
+}
+
+
+/* --------------------------------------------------- STRUCTURE */
+#theatre {height:100%;}
+#stage   {height:100%;position:relative;}
+#mask    {height:100%;position:relative;z-index:9;}
+#canvas  {height:100%;width:4500px;position:relative;cursor:move;}
+
+header {
+  color: #00f;
+  padding:0px;
+  height: 45px;
+  z-index: 100;  /* topmost */
+  position: relative;
+  background: #bed2e6;
+}
+
+footer {
+  color: #fff;
+  background: rgba(0, 0, 0, .8) !important;
+  background: #666;
+  position: absolute;
+  bottom: 0px;
+  margin: auto;
+  padding: 0 10px;
+  width: 95%;
+  left: 47.5%;
+  margin-left: -46%;
+  height: 37px;
+  min-width: 960px;
+  z-index: 99;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+}
+
+aside {
+  width: 220px;
+  z-index: 99;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #ffd;
+  padding: 10px;
+  padding-top: 50px;
+  border: 1px solid #999;
+  color: #676;
+  overflow: visible;
+}
+
+.frag-wrapper {
+  position: relative;
+}
+
+#home-logo {
+  margin-left: 20px;
+  border: none;
+}
+
+/* --------------------------------------------------- APP */
+.node {
+  padding: 10px;
+  width: 200px;
+  position: absolute;
+  z-index: 30;
+}
+.node > h2 {
+  font-size: 18px;
+  cursor: move;
+  padding: 0;
+  margin-bottom: 3px;
+}
+span.drag-handle {
+  color: #444;
+  padding-top: 3px;
+  background: transparent url('../img/spritesheet.png') -150px -10px no-repeat;
+  width: 13px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  left: -5px;
+}
+span.drag-handle.over {
+  color: #000;
+  background-position: -150px -50px;
+}
+.thumb-frame {
+  padding: 2px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background: #fff;
+  border: 4px solid #fff;
+  width: 200px;
+  cursor: pointer;
+}
+.thumb {
+  display: block;
+  cursor: pointer;
+}
+.thumb-frame > p {
+  padding: 3px; margin: 0px;
+  margin-top: 5px;
+  background: #eee;
+}
+
+.drag-me {
+  width: 52px;
+  height: 14px;
+  background: transparent url('../img/spritesheet.png') -150px -390px no-repeat;
+  position: absolute;
+  top: 10px;
+  left: -45px;
+}
+.click-me {
+  width: 53px;
+  height: 14px;
+  background: transparent url('../img/spritesheet.png') -150px -430px no-repeat;
+  position: absolute;
+  top: 150px;
+  left: -30px;
+}
+
+.cloud {
+  margin-top: 10px;
+  position: absolute;
+}
+.tag {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #abc;
+  color: #def;
+  background: #f39;
+  color: #fff;
+  padding: 2px 7px;
+  margin: 0;
+  margin-right: 5px;
+  font-family: calibri, 'trebuchet ms',  tahoma, verdana, arial, 'sans serif';
+  font-size: 8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.tag.label {
+  display: block;
+  background: none;
+  padding: 0 0 !important;
+  margin: 0;
+  margin-top: 5px;
+  color: #333;
+  font-size: 8px;
+  font-weight: bold;
+}
+.tag.tools {
+  background: #69f;
+  color: #fff;
+}
+
+.typetag {
+  background: transparent url('../img/typetag-webapp.png') 0 0 no-repeat;
+  position: absolute;
+  top: 22px;
+  left: -79px;
+}
+.typetag.artwork {
+  width: 113px;
+  height: 26px;
+  background-image: url('../img/typetag-artwork.png');
+  top: 38px;
+  left: -89px;
+}
+.typetag.concept {
+  width: 101px;
+  height: 63px;
+  background-image: url('../img/typetag-concept.png');
+  top: 46px;
+  left: -77px;
+}
+.typetag.design {
+  width: 100px;
+  height: 35px;
+  background-image: url('../img/typetag-design.png');
+  top: 24px;
+  left: -76px;
+}
+.typetag.diagram {
+  width: 110px;
+  height: 22px;
+  background-image: url('../img/typetag-diagram.png');
+  top: 38px;
+  left: -86px;
+}
+.typetag.icons {
+  width: 96px;
+  height: 33px;
+  background-image: url('../img/typetag-icons.png');
+  top: 38px;
+  left: -71px;
+}
+.typetag.illustration {
+  width: 133px;
+  height: 47px;
+  background-image: url('../img/typetag-illustration.png');
+  top: 45px;
+  left: -109px;
+}
+.typetag.misc {
+  width: 89px;
+  height: 34px;
+  background-image: url('../img/typetag-misc.png');
+  top: 38px;
+  left: -65px;
+}
+.typetag.webapp {
+  width: 106px;
+  height: 39px;
+  background-image: url('../img/typetag-webapp.png');
+  top: 22px;
+  left: -79px;
+}
+
+#drag-message {
+  width: 150px;
+  height: 20px;
+  background: #ff0 url('../img/sb-dragme.png') 5px 50% no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 99;
+  border: 1px solid #000;
+  color: #000;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+
+/* -------------------------------------------------------- STUFF */
+.noti {
+  font-size: 12px;
+  color: #fff;
+  padding: 5px 10px;
+  background: rgba(0,0,0,.7) !important;
+  background: #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.noti.loading {
+  background-image: url('../img/noti-loading.gif') !important;
+  background-position: 5px 50% !important;
+  background-repeat: no-repeat !important;
+  padding-left: 30px;
+}
+#loader {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+
+#output {
+  color: #666;
+  width: 280px;
+  overflow: hidden;
+  padding: 5px;
+  margin-top: 7px;
+  background: #eee;
+  position: absolute;
+  right: 7px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  white-space: nowrap;
+  font-size: 10px;
+}
+
+#pan-message {
+  font-size: 14px;
+  color: #fff;
+  padding: 5px;
+  background: rgba(0,0,0,.7) !important;
+  background: #000;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  height: 38px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  z-index: 99;
+}
+#pan-message > li {
+  height: 38px;
+  color: #fff;
+}
+#pan-left {
+  background: transparent url('../img/spritesheet.png') -144px -542px no-repeat;
+  width: 40px;
+}
+#pan-text {
+  width: 250px;
+  padding-top: 8px;
+}
+#pan-right {
+  background: transparent url('../img/spritesheet.png') -130px -582px no-repeat;
+  width: 40px;
+}
+
+
+/* -------------------------------------------------------- TOOLTIP */
+.tooltip {
+  position: absolute;
+  bottom: 34px;
+  left: 30px;
+  z-index: 99;
+}
+.balloon {
+  padding: 5px 10px;
+  background: #000;
+  max-width: 150px;
+  color: #999;
+  font-size: 11px;
+  border: 1px solid #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.balloon > .tail {
+  position: absolute;
+  bottom: -4px;
+  left: 9px;
+  background: transparent url('../img/spritesheet.png') -150px -270px no-repeat;
+  width: 9px;
+  height: 5px;
+}
+.balloon.link {
+  padding-right: 50px;
+}
+.tiplink {
+  background: transparent url('../img/spritesheet.png') -150px -310px no-repeat;
+  width: 38px;
+  height: 11px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+
+/* -------------------------------------------------------- FOOTBAR */
+#footbar {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#footbar > li{
+  background: transparent url('../img/spritesheet.png') -10px -10px no-repeat;
+  height: 20px;
+}
+
+#footbar > li.spacer {
+  background: none;
+  width: 10px;
+}
+
+#footbar > li.separator {
+  background: transparent url('../img/spritesheet.png') -150px -350px no-repeat;
+  width: 10px;
+}
+
+#technology {
+  background-position: -10px -10px;
+  width: 60px;
+}
+#html5 {
+  background-position: -10px -50px !important;
+  width: 39px;
+}
+#css3 {
+  background-position: -10px -90px !important;
+  width: 37px;
+}
+#jquery {
+  background-position: -10px -130px !important;
+  width: 60px;
+}
+#madeusing {
+  background-position: -10px -170px !important;
+  width: 62px;
+}
+#vim {
+  background-position: -10px -210px !important;
+  width: 18px;
+}
+#ps {
+  background-position: -10px -250px !important;
+  width: 16px;
+}
+#ai {
+  background-position: -10px -290px !important;
+  width: 16px;
+}
+#max {
+  background-position: -10px -330px !important;
+  width: 16px;
+}
+#maya {
+  background-position: -10px -370px !important;
+  width: 16px;
+}
+#testedon {
+  background-position: -10px -410px !important;
+  width: 54px;
+}
+#ie {
+  background-position: -10px -450px !important;
+  width: 16px;
+}
+#ff {
+  background-position: -10px -490px !important;
+  width: 16px;
+}
+#chrome {
+  background-position: -10px -530px !important;
+  width: 16px;
+}
+#safari {
+  background-position: -10px -570px !important;
+  width: 16px;
+}
+#opera {
+  background-position: -10px -610px !important;
+  width: 16px;
+}
+
+
+/* -------------------------------------------------------- ASIDE */
+#aside-shroud {
+  width: 242px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 110;
+  background: rgba(255,255,255,.6) !important;
+  border: 5px solid rgba(255,255,255,.6) !important;
+  background: #eee;
+  border: 15px solid #eee;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+#aside-header {
+  padding: 0px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 18px;
+  color: #333;
+  background: url('../img/spritesheet.png') no-repeat -150px -164px;
+  height: 62px;
+  border-bottom: 1px solid #666;
+  position: absolute;
+  top: -25px;
+  width: 220px;
+  cursor: pointer;
+}
+#aside-title {
+  position: relative;
+  left: 30px;
+}
+.floater-hide {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  width: 30px;
+  height: 5px;
+  background: url('../img/spritesheet.png') -150px -90px no-repeat;
+}
+.floater-show {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  width: 30px;
+  height: 5px;
+  background: url('../img/spritesheet.png') -150px -130px no-repeat;
+}
+
+#aside-nav {
+  position: absolute;
+  top: 40px;
+}
+#aside-nav > li {
+  padding: 2px 10px;
+  margin-right: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #ddd;
+  cursor: pointer;
+}
+#aside-nav > li.on {
+  background: #69f;
+  color: #fff;
+}
+
+#aside-content {
+  margin-top: 15px;
+}
+
+.gutter {
+  padding-left: 25px;
+}
+
+#pn {
+  width: 76px;
+  height: 12px;
+  background: transparent url('../img/spritesheet.png') -150px -630px no-repeat;
+}
+#em {
+  width: 103px;
+  height: 12px;
+  background: transparent url('../img/spritesheet.png') -150px -670px no-repeat;
+  display: block;
+}

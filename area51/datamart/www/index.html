@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>DataSmart Customer Details</title>
+
+  <script type="text/javascript" src="js/prototype/prototype.js"></script>
+  <script type="text/javascript" src="js/scriptaculous/scriptaculous.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="style/base.css" />
+  <link type="text/css" rel="stylesheet" href="style/util.css" />
+  <link type="text/css" rel="stylesheet" href="style/custom.css" />
+
+  <!-- ** Glider ** -->
+  <script type="text/javascript" src="js/other/glider.js"></script>
+
+  <!-- ** Lightbox gone wild ** -->
+  <script type="text/javascript" src="js/other/lightbox-wild.js"></script>
+  <link type="text/css" rel="stylesheet" href="style/lightbox-wild.css" />
+
+  <!-- ** Autocomplete ** -->
+  <link type="text/css" rel="stylesheet" href="style/scriptaculous-autocomplete.css" />
+</head>
+<body>
+
+
+
+          <div id="page">
+          <div id="content">
+
+
+
+
+          <!-- ** APPBAR *********************************************************** -->
+          <div id="appbar">
+<img src="images/sf-logo.png" border="0" align="left" width="139" height="26" />
+<img src="images/datasmart-logo.png" border="0" align="left" width="183" height="22" hspace="15" />
+
+<style>
+.search-button, .searchlist-button {
+  border: none !important;
+}
+.search-label {
+  position: absolute;
+  top: 5px;
+  left: -244px;
+}
+.search-field {
+  position: absolute;
+  top: 0px;
+  right: 47px;
+  width: 175px;
+}
+.search-button {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+}
+</style>
+
+<div id="appbar-search" class="minisearch">
+<small class="search-label">Search: </small>
+<input type="text" size="25" class="search-field" id="search-field" autocomplete="off" />
+<input type="image" src="images/ibutton-search.png" class="search-button" onfocus="blur()" />
+<a href="search-list.html" class="lbOn"><input type="image" id="searchlist-button"
+  src="images/ibutton-searchlist.png" class="searchlist-button" onfocus="blur()" /></a>
+
+</div>
+          </div><!-- id=appbar -->
+
+
+
+
+
+          <!-- ** HEADER *********************************************************** -->
+          <div id="header">
+
+          <!-- CARD -->
+          <div id="card">
+<div class="card-title">
+  <h1>Wachovia</h1>
+  <img src="images/sep-v-white.gif" border="0" width="2" height="18" hspace="10" />
+  <img src="images/flag-usa.gif" border="0" width="22" height="18" />
+  <a href="#">USA</a>
+  <img src="images/sep-v-white.gif" border="0" width="2" height="18" hspace="10" />
+  <img src="images/weather-partially-cloudy.png" border="0" width="38" height="22" class="nudge-down" />
+  <span class="weather"><strong>78&#186; 10:31</strong> <small>AM EST</small></span>
+  <img src="images/sep-v-white.gif" border="0" width="2" height="18" hspace="10" />
+  <img border="0" src="images/renewal-231.png"
+       style="position:relative;top:7px;right:5px;"/><small>days to renewal</small>
+
+</div>
+
+<!-- STATBAR -->
+<div class="statbar">
+<div class="status-info">
+  <span>Status: <b>Customer</b></span>
+  <span>Since: <b>Mar. 3, 1996</b></span>
+  <span>Market segment: <b>Mega</b></span>
+  <br />
+  <span>Industry: <b>Financial</b></span>
+  <small>
+  <span>Live: <b>PM, 360</b></span>
+  <span>In progress: <b>-</b></span>
+  </small>
+</div><!-- class=status-info -->
+<div class="license-info">
+  3,456 Seats
+  <br />
+  <small>2,888 used (88%)</small>
+</div>
+</div><!-- class=statbar -->
+
+
+<!-- STAT PANELS -->
+<div class="stat-panel" id="sales-stats">
+  <img border="0" src="images/status-upsell.png" />
+  <div><img border="0" src="images/weathervane-2.png" class="nudge-down"/> <strong>$3.4</strong><small><strong>MM</strong> Lifetime value</small></div>
+  <div><img border="0" src="images/weathervane-3.png" class="nudge-down"/> <strong>$1.2</strong><small><strong>MM</strong> 2 Yrs remaining</small></div>
+  <div><img border="0" src="images/weathervane-1.png" class="nudge-down"/>
+<strong>$382,987</strong> <small>Ann ASP rev</small></div>
+</div>
+
+<div class="stat-panel stat-panel-wide margin-x" id="usage-stats">
+  <img border="0" src="images/status-usage.png" />
+  <div><img border="0" src="images/sparkline-1.png" /> <img border="0"
+src="images/weathervane-3.png" class="nudge-down"/> <strong>364</strong><small> Avg daily
+logins</small></div>
+  <div><img border="0" src="images/sparkline-2.png" /> <img border="0"
+src="images/weathervane-2.png" class="nudge-down"/> <strong>1.4</strong><small>
+<strong>Hrs</strong> Avg session</small></div>
+  <div><img border="0" src="images/sparkline-3.png" /> <img border="0"
+src="images/weathervane-2.png" class="nudge-down"/> <strong>1.4</strong><small><strong>
+GB</strong> Bandwidth/month</small></div>
+</div>
+
+<div class="stat-panel" id="service-stats">
+  <img border="0" src="images/status-service-level.png" />
+  <div><img border="0" src="images/weathervane-1.png" class="nudge-down"/>
+<strong>34</strong><small> Open P2s</small></div>
+  <div><img border="0" src="images/weathervane-2.png" class="nudge-down"/>
+<strong>84</strong><small> Open JIRAs</small></div>
+  <div><img border="0" src="images/weathervane-3.png" class="nudge-down"/>
+<strong>302</strong><small> Lifetime JIRAs</small></div>
+</div>
+<!-- END STAT PANELS -->
+
+          </div><!-- id=card -->
+          <!-- END CARD -->
+
+
+
+          <!-- CAROUSEL -->
+          <div id="carousel">
+<div id="glider">
+<div class="small controls">
+  <a href="#section2" onfocus="blur()" onclick="manageLinks(this)" id="status-graph"
+     class="CONTROL-LINK">Status Graph</a>
+  |
+  <a href="#section1" onfocus="blur()" onclick="manageLinks(this)" id="homepage"
+     class="CONTROL-LINK">Homepage</a>
+  |
+  <a href="#section3" onfocus="blur()" onclick="manageLinks(this)" id="map"
+     class="CONTROL-LINK">Map</a>
+</div>
+
+<div class="scroller"><div class="content">
+  <div class="section" id="section2"><img border="0" src="images/graph-line.png" /></div>
+  <div class="section" id="section1"><img border="0" src="images/graph-homepage.png" /></div>
+  <div class="section" id="section3"><img border="0" src="images/graph-map.png" /></div>
+</div></div><!-- class=content  class=scroller -->
+</div><!-- id=glider -->
+
+<img src="images/ibutton-carousel-expand.png" border="0" width="18" height="18"
+  class="ibutton"
+  onclick="" />
+
+<a href="http://www.wachovia.com" target="_blank" onfocus="blur();" id="homepage-link"><img
+  src="images/ibutton-visit-website.png"
+  border="0" width="73" height="18"
+  class="ibutton" style="left: -6px;" /></a>
+
+          </div><!-- id=carousel -->
+          </div><!-- id=header -->
+
+
+
+
+<!-- == PANEL CONTROLS == -->
+<!--
+<div class="small" id="panels-controls">
+
+<span id="panel-back" class="trans"><img border="0" src="images/button-more-left.png" class="ADDPOINTER" id="panel-back" onclick="panelBack()" /> <small class="nudge-up">(Profile)</small></span>
+
+<span id="panel-forward"><small class="nudge-up">(Operations)</small> <img border="0" src="images/button-more-right.png" class="ADDPOINTER" onclick="panelForward()"/>
+</span>
+<big><a href="">More -></a></big>
+
+</div>
+-->
+
+
+<script>
+// XXX: totally geto for now
+function panelBack() {
+  $('panels').morph({right: '0px', duration: '.05'});
+}
+function panelForward() {
+  $('panels').morph({right: '225px', duration: '.05'});
+}
+</script>
+
+
+
+<!-- == BODY ============================================================= -->
+          <div id="body">
+
+
+<!-- == PANELS =========================================================== -->
+          <div id="panels">
+
+
+
+
+<!-- == PROFILE PANEL ==================================================== -->
+<div id="profile-panel" class="panel LESS">
+
+      <!-- == TITLE == -->
+<div class="panel-title">
+  <h2>Profile</h2>
+  <h3><small>Composite Index Score:</small> 8</h3>
+  <img src="images/ibutton-expand.gif" border="0" width="15" height="15"
+       class="ibutton"
+       onclick="toggleExpand(this,'profile-panel')" />
+</div>
+
+      <!-- == INCLUDE CONTENT == -->
+<div id="panel-profile"></div>
+<script>new Ajax.Updater('panel-profile','panel-profile.html',{evalScripts: true})</script>
+
+</div><!-- END PROFILE PANEL -->
+
+
+
+<!-- == SALES PANEL ====================================================== -->
+<div id="sales-panel" class="panel LESS">
+
+      <!-- == TITLE == -->
+<div class="panel-title">
+  <h2>Sales</h2>
+  <h3><small>Upsell Readiness:</small> HIGH</h3>
+  <img src="images/ibutton-expand.gif" border="0" width="15" height="15"
+       class="ibutton"
+       onclick="toggleExpand(this,'sales-panel')" />
+</div>
+
+      <!-- == INCLUDE CONTENT == -->
+<div id="panel-sales"></div>
+<script>new Ajax.Updater('panel-sales','panel-sales.html',{evalScripts: true})</script>
+<script>new Ajax.Updater('sales-comments','comments.html',{evalScripts: true})</script>
+
+</div><!-- END SALES PANEL -->
+
+
+
+
+<!-- == PS PANEL ========================================================= -->
+<div id="ps-panel" class="panel LESS">
+
+      <!-- == TITLE == -->
+<div class="panel-title">
+  <h2>ProServ</h2>
+  <h3><small>ProServ Config Score:</small> 8</h3>
+  <img src="images/ibutton-expand.gif" border="0" width="15" height="15"
+       class="ibutton"
+       onclick="toggleExpand(this,'ps-panel')" />
+</div>
+
+      <!-- == INCLUDE CONTENT == -->
+<div id="panel-ps"></div>
+<script>new Ajax.Updater('panel-ps','panel-ps.html',{evalScripts: true})</script>
+<script>new Ajax.Updater('ps-comments','comments.html',{evalScripts: true})</script>
+
+</div><!-- END SALES PANEL -->
+
+
+
+<!-- == CS PANEL ========================================================= -->
+<div id="cs-panel" class="panel LESS">
+
+  <!-- == TITLE == -->
+  <div class="panel-title">
+    <h2>Customer Success</h2>
+    <h3><small>Customer Success Score:</small> 5.78</h3>
+    <img src="images/ibutton-expand.gif" border="0" width="15" height="15"
+         class="ibutton"
+         onclick="toggleExpand(this,'cs-panel')" />
+  </div>
+
+      <!-- == INCLUDE CONTENT == -->
+<div id="panel-cs"></div>
+<script>new Ajax.Updater('panel-cs','panel-cs.html',{evalScripts: true})</script>
+
+</div><!-- END CS PANEL -->
+
+
+
+
+
+<!-- == OPS PANEL ======================================================== -->
+<div id="ops-panel" class="panel LESS">
+
+  <!-- == TITLE == -->
+  <div class="panel-title">
+    <h2>Operations</h2>
+    <h3>Ops Index Score: 8</h3>
+    <img src="images/ibutton-expand.gif" border="0" width="15" height="15"
+         class="ibutton"
+         onclick="toggleExpand(this,'ops-panel')" />
+  </div>
+
+      <!-- == INCLUDE CONTENT == -->
+<div id="panel-ops"></div>
+<script>new Ajax.Updater('panel-ops','panel-ops.html',{evalScripts: true})</script>
+
+</div><!-- END OPS PANEL -->
+
+
+          </div><!-- id=panels -->
+          </div><!-- id=body -->
+
+
+
+          </div><!-- id=content -->
+          </div><!-- id=page -->
+
+
+
+
+
+
+
+
+<!-- ** SCRIPT *********************************************************** -->
+<script type="text/javascript">
+
+// -- toggleExpand ------------------------------
+function toggleExpand(sw, pn) {
+  // we'll store the toggle state using the panel elements classname. lazy i guess
+  if($(pn).hasClassName('LESS')) {
+      // expand
+      // XXX: apply from a map
+      $(pn).morph({width: '890px',
+                   height: '1200px',
+                   background: '#ddd',
+                   borderTop: '3px solid #fff'
+                  },
+                  {beforeStart: function(){
+                     $('panels').immediateDescendants().each(function(p){p.hide()});
+                     $(pn).show();
+                  }}
+      );
+      $(pn).getElementsByClassName('panel-body')[0].morph({width: '490px'});
+
+      $(pn).getElementsBySelector(".panel-title h2")[0].morph({fontSize: '40px'});
+      $(pn).getElementsByClassName('EXPANDED').each(function(el){el.toggle()});
+      $(pn).getElementsByClassName('COMPRESSED').each(function(el){el.toggle()});
+      $('header').morph({height: '35px'});
+      $('carousel').morph({opacity: '0.0'})
+      $(pn).addClassName('MORE').removeClassName('LESS');
+      sw.src="images/ibutton-unexpand.gif";
+  } else {
+      // shrink
+      // XXX: apply from a map
+      $(pn).morph({width: '205px',
+                   height: '450px',
+                   background: '#eee',
+                   borderTop: '1px dotted #999'
+                  },
+                  {afterFinish: function(){
+                     $('panels').immediateDescendants().each(function(p){p.show()});
+                  }}
+      );
+      $(pn).getElementsByClassName('panel-body')[0].morph({width: '205px'});
+
+      $(pn).getElementsBySelector(".panel-title h2")[0].morph({fontSize: '22px'});
+      $(pn).getElementsByClassName('EXPANDED').each(function(el){el.toggle()});
+      $(pn).getElementsByClassName('COMPRESSED').each(function(el){el.toggle()});
+      $('header').morph({height: '210px'});
+      $('carousel').morph({opacity: '1.0'});
+      $(pn).addClassName('LESS').removeClassName('MORE');
+      sw.src="images/ibutton-expand.gif";
+  }
+}
+
+
+// -- control carousel glider links ---------------------
+var controlLinks = $$('.CONTROL-LINK');
+function manageLinks(al) {  // active link
+
+  if(al.id=='homepage') $('homepage-link').show();
+  else                  $('homepage-link').hide();
+}
+
+// -- children toggler -----------------------------
+function childrenToggle(el) {  // el the parent container with elements to toggle
+  $(el).getElementsByClassName('DETAILS').each(function(e){Effect.toggle(e,'blind')});
+}
+
+
+// ** ONLOADIZZLE *******************************************************
+// default
+window.onload = function(){
+  manageLinks(controlLinks[0]);
+};
+
+// glider
+var glider = new Glider('glider', {duration: .5});
+
+
+// ibutton cursor mouseovers
+$$('.ibutton').each(function(ib){
+  Event.observe(ib, 'mouseover', function(){ib.addClassName('pointer')});
+});
+$$('.ADDPOINTER').each(function(ib){
+  Event.observe(ib, 'mouseover', function(){ib.addClassName('pointer')});
+});
+
+// autosuggest
+
+
+
+
+</script>
+
+
+
+<p style="display:none;">
+<label for="bands_from_the_70s">Your favorite rock  band from the 70's:</label>
+<br />
+<input id="bands_from_the_70s" autocomplete="off" size="40" type="text" value="" /></p>
+<div class="page_name_auto_complete" id="band_list" style="display:none"></div>
+
+<script type="text/javascript">
+new Autocompleter.Local('search-field', 'band_list', ["5th","3rd","Bank","AccuityLLP","Advest","Affinity","Federal","Credit","Union","Alliance","Collection","Agencies, Inc.","Alliant","Credit","Union","Allianz","Global","Investors","(AGI)","Arrow","Hedge","Partners","Inc.","AXA","Rosenberg","Bangor","Savings","Bank","Bank","Austria","Creditanstalt","AG","BankAtlantic","Bancorp,","Inc","Beard","Miller","Company","LLP","Borel","Private","Bank","Burns","&amp;","Wilcox","Ltd.","CapitalSource,","Inc.","Cardinal","Venture","Capital","Cash","Box","CashEdge","Inc.","Cedar","Hill","Capital","Centara","Capital","Management","Group,","Inc.","Central","Florida","Educators","FCU","Chicago","Board","of","Trade","CIT","Group","Cogent","Partners","Computershare","CQG","Cryo","Bank","DHJJ","eFunds","ELCA","Board","of","Pensions","EM&amp;I","Equifax","Inc.","Fannie","Mae","Federal","Reserve","Bank","of","St.","Louis","Financial","Guaranty","Insurance","Company","-","FGIC","First","American","Corporation","HQ","First","Niagara","Financial","Group,","Inc.","First","Reliance","bank","Flagstar","Bancorp,","Inc.","Foster","Glynn","Capital","Management","GMAC","Financial","Services","Goal","Financial","Grant","Thornton","Greenfield","Savings","Bank","Greylock","Federal","Credit","Union","Guardian","Edge","Hamilton","Sundstrand","Federal","Credit","Union","Hudson","Valley","Federal","Credit","Union","ING","Americas","Inc","Innovest","Irwin","Commercial","Fianance","Irwin","Home","Equity","Irwin","Union","Bank","and","Trust","Jackson","Hewitt","Inc.","Kamylon","Capital","KBC","Financial","Keenan","&amp;","Associates","Kingsport","Press","Credit","Union","Landesbank","Baden-Wurttemberg","Larson","Gross,","p.l.l.c.","Leerink","Swann","LIIF","(Low","Income","Investment","Fund)","Lloyds","(Accenture)","Lundstrom","Insurance","Magyar","Savings","Bank","Manulife","Financial","MBI","Solutions","Meridias","Capital","Metavante","Corporation","MFA","Mission","Federal","Credit","Union","Missouri","Employers","Mutual","Moon","Capital","MSUFCU","NASDAQ","National","Insurance","Co.","Navis","New","Century","Financial","Corporation","New","York","Life","Insurance","Company","NuUnion","Credit","Union","O","Bee","Credit","Union","OneAmerica","OppenheimerFunds","PAi","PFPC","PFTC","Advisers,","LLC","PICA","Group","PMI","Group,","Inc.","Prime","Financial","Corporation","Probitas","Partners","Proffer","Financial","Progress","Investment","Management","Company","Protective","Life","QBE","Insurance","Group","Europe","QBE","Insurance","Group","Ltd","Questrade","Raymond","James","Financial,Inc","Regions","Financial","Corporation","Riverside","Company","Robert","W","Baird","Ryan","and","Company","Schultze","Asset","Management,","LLC","Scotiabank","Scottish","Re","Group","Limited","Second","Creek","Technology","Security","Bank","Corporation","South","Carolina","Federal","Credit","Union","Sovereign","Bancorp,","Inc.","State","National","Sws","Group","Inc","Synovus","TakeCare","Insurance","Co.","Inc.","Texans","Credit","Union","The","Doctor's","Company","The","Phoenix","Companies","The","South","Financial","Group","Unitrin","Direct","University","Federal","Credit","Union","Utica","National","Insurance","Group","Virgin","Mogney","Voxant,","Inc.","Wachovia","Waveland","Wescom","Credit","Union","Westfield","Group","Services"],{});
+</script>
+
+
+
+<style>
+
+</style>
+</body></html>
+

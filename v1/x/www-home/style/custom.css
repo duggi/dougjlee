@@ -1,0 +1,252 @@
+/* CUSTOM.CSS */
+
+
+/* ==== STRUCTURE ==== */
+#godhead {}
+#mainbar {}
+.block {width:960px;margin: 0 auto;color:inherit;background:url('../img/bg-960grid.pngi')}
+.stripe {overflow:hidden;}
+
+
+/* ==== GODHEAD ==== */
+#godhead {
+  background: #333;
+  color: #fff;
+  border-bottom: 1px solid #666;
+  padding: 7px 0px;
+  text-align: right;
+}
+
+
+.ubernav > li {
+  padding: 0 10px;
+}
+.ubernav a {
+  color: #ddd;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+.ubernav a:hover {
+  color: #fff;
+}
+
+
+/* ==== MAINBAR ==== */
+#mainbar {}
+#mainbar-left {
+  float:left;
+  padding-top: 15px;
+}
+#mainbar-right {
+  float:right;
+  text-align: right;
+  padding-top: 50px;
+}
+
+
+/* ==== MAINNAV ==== */
+#mainnav {position:relative;top:-8px;}
+#mainnav > li {
+  padding: 0px;
+}
+#mainnav a {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #999;
+  font-family: helvetica, arial;
+  font-size: 13px;
+  font-weight: bold;
+}
+#mainnav a:hover {
+}
+#mainnav a.on {
+  color: #666;
+  background: #ddd;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-radius-topleft: 10px;
+  -webkit-border-radius-topright: 10px;
+}
+
+
+/* ==== BILLBOARD ==== */
+#content {
+  padding-top: 40px;
+  border-top: 1px solid #ddd;
+  background: url('../img/bg-content.png') 0 0 repeat-x;
+}
+
+#billboard-left {
+  float: left;
+  width: 560px;
+  background: #999;
+  padding: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#billboard-right {
+  float: right;
+  width: 380px;
+}
+
+ul#billboard-nav {
+  color: #e96f35;
+}
+ul#billboard-nav li {
+  padding-top: 10px;
+  width: 360px; height: 60px;
+  padding-left: 50px;
+  background: url('../img/billboard-arrow.png') 15px 0 no-repeat;
+}
+ul#billboard-nav li.on {
+  background: url('../img/billboard-flag.png') 0 0 no-repeat;
+  color: #fff;
+}
+#billboard-nav a {
+  text-decoration: none;
+  color: #e96f35;
+  font-size: 14px;
+}
+#billboard-nav li.on a {
+  color: #fff;
+}
+
+
+
+/* ==== CTA BOX ==== */
+#cta {
+  position: relative;
+  background: #eee;
+}
+.cta-badge {
+  width: 62px; height: 62px;
+  background: url('../img/badge-free.png') 0 0 no-repeat;
+  float: left;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+.cta-message {
+  margin-left: 35px;
+  float: left;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+.cta-message p, .cta-message em {
+  font-family: georgia;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.cta-message em {
+  font-size: 16px;
+  color: #e96f35;
+}
+
+
+ul#signup {
+  padding-top: 10px;
+  float: right;
+}
+ul#signup > li {
+  padding-left: 60px;
+  height: 50px;
+}
+.field-button {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 5px;
+  border: 4px solid #999;
+  width: 360px;
+  background: #fff;
+}
+.field-button input.field {
+  border: none;
+  width: 300px;
+  color: #999;
+}
+.field-button a.button {
+  border-left: 2px dotted #999;
+  color: #999;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.signup1 {
+  background: url('../img/1.png') no-repeat;
+}
+.signup2 {
+  background: url('../img/2.png') 50% 0 no-repeat;
+  width: 50px;
+}
+.signup3 {
+  background: url('../img/3.png') 50% 0 no-repeat;
+  width: 50px;
+}
+
+
+
+/* ==== BIGFOOT ==== */
+#bigfoot {
+  margin-top: 50px;
+  padding: 20px 0 100px;
+  background: #999;
+  color: #fff;
+}
+#bigfoot h3 {
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+}
+#bigfoot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#linkfarm > li {
+  width: 230px;
+}
+
+#linkfarm pre {
+  font-family: tahoma;
+  font-size: 9px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding: 10px 0px;
+  overflow: auto;
+}
+
+
+/* ==== BOX ==== */
+.box {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+
+/* ==== PILLS ==== */
+.pill {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 4px 10px;
+  margin: 0px;
+  background: #eee;
+  color: #666;
+  font-family: 'arial rounded mt bold',arial;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+a.pill, a.pill:link, a.pill:visited, a.pill:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+a.pill:hover {
+  background: #ddd;
+}
+

@@ -1,0 +1,108 @@
+/*
+ * CUSTOM.CSS
+ *
+ * author:  douglas lee
+ * version: $Id: base.css,v 1.2 2004/01/09 00:31:20 doug Exp $
+ */
+
+
+
+/* ****************************************************
+ * CUSTOM
+ */
+table.body
+{ background:      #fff;
+  border-top:      1px solid #fff;
+  border-bottom:   1px solid #999; }
+
+.mast
+{ background:      #f90;
+  color:           #ffd; }
+
+.mast .sub
+{ color:           #ff6;
+  /*font-size:       80%;*/ }
+
+.nav
+{ padding:         0px 0px 10px 20px;
+  color:           #ff0; }
+
+.nav a, .nav a:link, .nav a:active, .nav a:visited
+{ color:           #ff6; }
+
+.nav a:hover
+{ color:           #fff; }
+
+.col
+{ border-left:     2px dotted #ccc; }
+
+.col-alt
+{ background:      #ffd;
+  border-left:     2px dotted #ccc; }
+
+.col-alt th
+{ background:      #c00 ! important;
+  border-left:     10px solid #900 ! important; }
+
+.col-alt h2
+{ color:           #fff ! important; }
+
+.col-alt li
+{ color:           #000; }
+
+.col-alt a, .col-alt a:link, .col-alt a:active, .col-alt a:visited
+{ color:           #c00 ! important; }
+
+.col-alt a:hover
+{ color:           #f00 ! important; }
+
+.ctbl
+{}
+
+.ctbl h2
+{ font-weight:     normal; }
+
+.ctbl h2 p
+{ margin:          0px ! important; }
+
+.ctbl th
+{ text-align:      left;
+  background:      #ccc;
+  padding:         5px 10px;
+  border-top:      1px solid #999;
+  border-bottom:   1px solid #999;
+  border-left:     10px solid #999; }
+
+.ctbl td
+{ padding:         5px; }
+                                 
+.ctbl ul
+{ margin:          0px 0px 0px 15px;
+  padding:         0px; }
+
+.ctbl li
+{ margin:          3px 0px;
+  padding:         0px; }
+
+.ctbl .none
+{ border:          none; }
+
+.ctbl p
+{ margin:          0px 0px 5px 0px;
+  color:           #000; }
+
+.ctbl a:link, .ctbl a:visited, .ctbl a:active
+{ color:           #f60; }
+
+.ctbl a:hover
+{ color:           #f30; }
+
+.ctbl a img
+{ background:      #999; }
+
+.ctbl a:hover img
+{ background:      #000; }
+
+
+
+

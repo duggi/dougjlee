@@ -1,0 +1,223 @@
+/* CUSTOM.CSS */
+
+
+/* ==== STRUCTURE ==== */
+#godhead {}
+#mainbar {}
+.block {width:960px;margin: 0 auto;color:inherit;background:url('../img/bg-960grid.pngi')}
+.stripe {overflow:hidden;}
+
+
+/* ==== GODHEAD ==== */
+#godhead {
+  background: url('../img/bg-godhead.png') 100% 0 repeat-x;
+  color: #fff;
+  padding: 7px 0px;
+  text-align: right;
+}
+
+.ubernav > li {
+  padding: 0px 10px 0px;
+}
+.ubernav a {
+  color: #ddd;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 9px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.ubernav a:hover {
+  color: #fff;
+}
+.ubernav a.pill {
+  margin-top: 2px;
+  color: #880;
+  background: #000;
+}
+.ubernav a.pill:hover {
+  margin-top: 2px;
+  color: #ff0;
+  background: #000;
+}
+
+/* ==== MAINBAR ==== */
+#mainbar {}
+#mainbar-left {
+  float:left;
+  padding: 0;
+  position: relative;
+}
+#mainbar-right {
+  float:right;
+  text-align: right;
+  padding: 0;
+  width: 500px;
+}
+
+
+/* ==== MAINNAV ==== */
+#mainnav {position:relative;top:-4px;}
+#mainnav > li {
+  padding: 0px;
+}
+#mainnav a {
+  padding: 9px 20px 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #999;
+  font-family: helvetica, arial;
+  font-size: 10px;
+  font-weight: bold;
+}
+#mainnav a:hover {
+}
+#mainnav a.on {
+  color: #666;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-radius-topleft: 10px;
+  -webkit-border-radius-topright: 10px;
+}
+
+
+/* ==== PRIVACY SLIDER ==== */
+.privacy-slider {
+  background: url('../img/slider-public.png') 100% 0 no-repeat;
+  height: 23px;
+  text-transform: uppercase;
+  color: #999;
+  min-width: 230px;
+  padding-top: 5px;
+}
+#mainbar-left .privacy-slider {
+  position: absolute;
+  bottom: -10px; left: 0;
+}
+#mainbar-left #privacy-settings-trigger {
+  position: absolute;
+  bottom: 0; left: 240px;
+  font-size: 8px;
+  color: #ccc;
+}
+
+/* ==== BILLBOARD ==== */
+#content {
+  padding-top: 20px;
+  border-top: 1px solid #ebebeb;
+  background: url('../img/bg-content.png') 0 0 repeat-x;
+}
+.triptych {
+  float: left;
+  position: relative;
+}
+.sharebar {
+  position: absolute;
+  top: 34px;
+  left: 6px;
+}
+
+
+/* ==== THUMB BOX ==== */
+.thumb {
+  float: left;
+  width: 170px; height: 130px;
+  padding: 5px;
+  margin: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #000;
+}
+
+
+
+/* ==== BIGFOOT ==== */
+#bigfoot {
+  margin-top: 50px;
+  padding: 20px 0 100px;
+  background: #999;
+  color: #fff;
+}
+#bigfoot h3 {
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+}
+#bigfoot a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#linkfarm > li {
+  width: 230px;
+}
+
+#linkfarm pre {
+  font-family: tahoma;
+  font-size: 9px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding: 10px 0px;
+  overflow: auto;
+}
+
+
+/* ==== FIELD BUTTON ==== */
+.field-button {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 0px 7px 0px 0px;
+  width: 250px;
+  background: #fff;
+  position: relative;
+}
+.field-button input.field {
+  border: none;
+  width: 200px;
+  padding: 0px; margin: 0px;
+  position: absolute;
+  top: 4px; left: 10px;
+  color: #999;
+}
+.field-button a.button {
+  border-left: 2px dotted #999;
+  color: #999;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+
+/* ==== BOX ==== */
+.box {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+
+/* ==== PILLS ==== */
+.pill {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 4px 10px;
+  margin: 0px;
+  background: #eee;
+  color: #666;
+  font-family: 'arial rounded mt bold',arial;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+a.pill, a.pill:link, a.pill:visited, a.pill:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+a.pill:hover {
+  background: #ddd;
+}
+

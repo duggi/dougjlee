@@ -1,0 +1,422 @@
+/*
+ * CUSTOM.CSS
+ */
+
+
+/*
+  border: 1px solid #fff;
+*/
+
+
+
+/* -- REGIONS ------------------------------------------------------------ */
+body {
+  background: url("../images/body-bg.gif") 0% 0% repeat-x;
+}
+
+#page {}
+
+#content {
+  width: 900px;
+  margin-right: auto; margin-left: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#appbar {
+  height: 40px;
+}
+
+#appbar-search {
+  float: right;
+  position: relative;
+}
+
+#header {
+  height: 210px; width: 900px;
+  padding: 10px; padding-bottom: 0px;
+  background: url("../images/header-bg.png") 0% 0% no-repeat;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+#card {
+  float: left;
+  width: 520px;
+  height: 195px;
+  position: relative; top: -5px;  /* to compensate for indelible h1 padding */
+}
+
+#carousel {
+  float: right;
+  margin-right: 20px;  /* defeats #header padding pushout */
+  width: 350px;
+  height: 190px;
+  background: url("../images/carousel-bg.png") 0 0 no-repeat;
+  position: relative;
+}
+
+
+
+
+
+/* -- APPBAR ------------------------------------------------------------- */
+.minisearch input {
+  border: 1px solid #9fa9ba;
+}
+.minisearch-button {
+  border-left: none !important;
+  background: #090;
+  color: #fff;
+}
+
+
+/* -- HEADER ------------------------------------------------------------- */
+.card-title {
+  margin-bottom: 8px;
+}
+
+.card-title h1 {
+  color: #fff;
+  font-size: 28px;
+  padding: 0px !important; margin: 0px !important;
+  display: inline;
+}
+.card-title a, .card-title a:link, .card-title a:visited, .card-title a:active, .card-title a:hover {
+  color: #fff;
+}
+
+.card-title strong {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.card-title small {
+  color: #fff;
+}
+
+.card-title .weather {
+  color: #fff;
+} 
+
+.statbar {
+  background: url("../images/statbar-bg.png") 0% 0% no-repeat;
+  width: 520px; height: 33px;
+  padding: 3px 5px;
+}
+
+
+/* -- GLIDER ------------------------------------------------------------- */
+div.scroller { 
+	width: 348px; 
+	height: 159px;
+	overflow: hidden;
+  position: relative;
+}
+div.scroller div.section { /* match the size of the scroller window */		
+  width:348px;
+  height:159px;
+  overflow:hidden;
+  float:left;
+  padding:3px;	
+}
+div.scroller div.content {
+  width: 10000px;
+}
+div.controls {
+  margin-top: 3px;
+  height: 17px;
+  padding: 3px;
+  text-align: center;
+  border-bottom: 1px dotted #999;
+}
+
+div.controls a {
+  color: #666;
+  font-family: arial;
+  padding: 3px 8px;
+  border-bottom: 2px solid #fff;
+  background: #fff url('../images/rev-corner-white-nw.png') 0 0 no-repeat;
+}
+
+/* -- STATUS ------------------------------------------------------------- */
+div.status-info {
+  width: 400px; height: 30px;
+  font-family: arial;
+  font-size: 10px;
+  border-right: 2px dotted #999;
+  float: left;
+  line-height: 14px;
+}
+.status-info b {
+  font-size: 11px;
+}
+.status-info small b {
+  font-size: 9px ! important;
+}
+
+.status-info span {
+  margin-right: 10px;
+}
+
+div.license-info {
+  width: 95px;
+  float: left;
+  font-family: arial;
+  text-align: right;
+  color: #090;
+  font-size: 14px;
+}
+.license-info small {
+  font-size: 10px;
+  color: #999;
+}
+
+.stat-panel {
+  width: 140px;
+  height: 105px;
+  padding: 5px;
+  float: left;
+  font-family: arial;
+}
+#sales-stats {
+  width: 150px;
+}
+#usage-stats {
+  width: 200px;
+}
+#service-stats {
+  width: 130px;
+}
+.stat-panel div {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 7px;
+}
+.stat-panel small {
+  font-size: 10px;
+  color: #666;
+}
+.stat-panel strong {
+  color: #000;
+}
+
+
+
+/* == PANELS ============================================== */
+#body {
+  margin-top: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+#panels {
+  width: 1300px;
+  overflow: hidden;
+  position: relative;
+  right: 0px;
+}
+
+#panels-controls {
+  position: relative;
+  color: #999;
+}
+#panel-forward {
+  position: absolute;
+  left: 88%;
+  text-align: right;
+}
+
+.panel {
+  background: #fff url("../images/panel-bg.gif") 0 0 repeat-x;
+  background: #eee;
+  width: 205px;
+  padding: 5px; padding-top: 0px;
+  margin-right: 12px;
+  border-top: 1px dotted #999;
+  position: relative;
+  height: 450px;
+  float: left;
+  color: #000;
+}
+.panel h2 {
+  font-size: 22px;
+  color: #666;
+  font-weight: normal;
+}
+.panel h3 {
+  color: #667;
+}
+.panel em {
+  color: #444;
+  font-size: 10px;
+}
+.panel-last {margin-right: 0;}
+.panel-title {
+ margin-bottom: 10px; 
+}
+
+.panel-body {
+  float: left;
+  overflow: auto !important;
+}
+.panel-expanded {
+  width: 360px;
+  background: #eee;
+  float: right;
+  margin-left: 10px;
+  padding: 10px;
+}
+.panel-expanded h3 {
+  margin: 0px; padding: 0px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #f60;
+  border-bottom: 1px dotted #f60;
+}
+
+.panel-controls {
+  font-family: arial;
+}
+
+
+.panel-title {
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #999
+}
+.panel-title h2, .panel-title h3 {
+  margin: 0px;
+  padding: 0px;
+}
+.panel-title h3 {
+  color: #000;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+div.body-chunk {
+}
+div.body-chunk-title {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+.body-chunk h3 {
+  margin: 0px; padding: 0px;
+  color: #f60;
+  font-size: 14px;
+  font-weight: normal;
+}
+.body-chunk h4 {
+  margin: 0px; padding: 0px;
+  font-size: 18px;
+  color: #333;
+}
+.body-chunk h5 {
+  margin: 0px; padding: 0px;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: italic;
+  color: #000;
+}
+
+.comments {
+  position: relative;
+}
+.comments .tooldock {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.comments dd, .comments dt {
+  float: left;
+}
+.comments dd {
+  width: 100px;
+  margin: 0px; padding: 3px;
+  text-align: right;
+}
+.comments dt {
+  width: 350px;
+  margin-left: 5px;
+  padding: 3px; padding-left: 5px;
+  border-left: 3px solid #999;
+}
+
+.announcement {
+  background: #ffc;
+  padding: 3px;
+  border: 1px dotted #f90;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 5px;
+}
+.announcement h4 {
+}
+
+.bit {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.side-chunk h4, .side-chunk h5{
+  margin: 0px; padding: 0px;
+}
+.side-chunk h4 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.side-chunk h5 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 11px;
+}
+.side-chunk p {
+  margin: 3px 0px; padding: 0px;
+  font-size: 11px;
+}
+
+.contact {
+  background: #ddf;
+  background-image: url('../images/contact-expand-bg.png');
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+  border: 1px dotted #99c;
+}
+.contact-details {
+  background: url("../images/stub-contact-details.png") 100% 0 no-repeat;
+  height: 22px;
+}
+
+
+/* XXX: move to util */
+ul.flush li {
+  margin-bottom: 3px;
+}
+
+/* -- UI ----------------------------------------------------------------- */
+.ibutton {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+#carousel .ibutton {
+  position: relative;
+  left: 0px;
+  top: -14px;}
+
+.message {
+  padding: 5px;
+  background: #eef;
+  border: 1px dotted #aab;
+  color: #669;
+}
+
+.expand-down {
+  background-image: url('../images/contact-expand-bg.png');
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+}
+

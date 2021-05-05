@@ -1,0 +1,170 @@
+/* UTIL.CSS */
+
+
+
+/* ==== HTML EMULATION ==== */
+.center {text-align:center !important;}
+.right  {text-align:right !important;}
+.left   {text-align:left !important;}
+.top    {vertical-align:top !important;}
+.middle {vertical-align:middle !important;}
+.bottom {vertical-align:bottom !important;}
+
+.float-left  {float:left !important;}
+.float-right {float:right !important;}
+
+.bold   {font-weight:bold !important;}
+.normal {font-weight:normal !important;}
+.italic {font-style:italic !important;}
+.underline {text-decoration:underline !important;}
+
+.uppercase  {text-transform:uppercase !important;}
+.lowercase  {text-transform:lowercase !important;}
+.capitalize {text-transform:capitalize !important;}
+
+.nowrap {white-space:nowrap !important;}
+
+.border-collapse {border-collapse:collapse !important;}
+
+.inline {display:inline !important;}
+.inline-block {display:inline-block !important;}
+.block {display:block !important;}
+.none {display:none !important;}
+
+.clear-right {clear:right !important;}
+.clear-left  {clear:left !important;}
+.clear-none  {clear:none !important;}
+.clear-both  {clear:both !important;}
+
+
+/* ==== SMALL WORLD ==== */
+small, .small,
+.small p, .small a, .small em,
+.small li, .small ul,
+.small code, .small pre,
+.small table, .small tr, .small td, .small th,
+.small span,
+.small select, .small option, .small input, .small textarea
+{font-size:x-small;}
+
+
+
+.tiny {font-size:7pt;}
+
+
+/* ==== SPACING ==== */
+.pad        {padding:5px;}
+.pad-top    {padding-top:5px;}
+.pad-right  {padding-right:5px;}
+.pad-left   {padding-left:5px;}
+.pad-bottom {padding-bottom:5px;}
+.pad-x      {padding-left:5px;padding-right:5px;}
+.pad-y      {padding-top:5px; padding-bottom:5px;}
+
+.dbl-pad          {padding:10px !important;}
+.dbl-pad-top      {padding-top:10px;}
+.dbl-pad-right    {padding-right:10px;}
+.dbl-pad-left     {padding-left:10px;}
+.dbl-pad-bottom   {padding-bottom:10px;}
+.dbl-pad-x        {padding-left:10px;padding-right:10px;}
+.dbl-pad-y        {padding-top:10px; padding-bottom:10px;}
+
+.small-pad        {padding:3px;}
+.small-pad-top    {padding-top:3px;}
+.small-pad-right  {padding-right:3px;}
+.small-pad-left   {padding-left:3px;}
+.small-pad-bottom {padding-bottom:3px;}
+.small-pad-x      {padding-left:3px;padding-right:3px;}
+.small-pad-y      {padding-top:3px; padding-bottom:3px;}
+
+.margin         {margin:5px !important;}
+.margin-top     {margin-top:5px !important;}
+.margin-right   {margin-right:5px !important;}
+.margin-bottom  {margin-bottom:5px !important;}
+.margin-left    {margin-left:5px !important;}
+.margin-x       {margin-left:5px !important;margin-right:5px !important;}
+.margin-y       {margin-top:5px !important;margin-bottom:5px !important;}
+
+.dbl-margin-top     {margin-top:10px !important;}
+.dbl-margin-right   {margin-right:10px !important;}
+.dbl-margin-bottom  {margin-bottom:10px !important;}
+.dbl-margin-left    {margin-left:10px !important;}
+.dbl-margin-x       {margin-left:10px !important;margin-right:10px !important;}
+.dbl-margin-y       {margin-top:10px !important;margin-bottom:10px !important;}
+
+.small-margin         {margin:5px;}
+.small-margin-top     {margin-top:3px;}
+.small-margin-right   {margin-right:3px;}
+.small-margin-bottom  {margin-bottom:3px;}
+.small-margin-left    {margin-left:3px;}
+.small-margin-x       {margin-left:3px;margin-right:3px;}
+.small-margin-y       {margin-top:3px;margin-bottom:3px;}
+
+
+
+/* ==== NUDGERS ==== */
+.nudge-down {position:relative;top:2px;}
+.dbl-nudge-down {position:relative;top:4px;}
+.triple-nudge-down {position:relative;top:6px;}
+.nudge-up   {position:relative;top:-2px;}
+
+
+/* ==== LIST ==== */
+ul.flush, ul.flush > li {padding:0px;margin:0px;list-style-type:none;}
+ul.stackify {padding:0px;margin:0px;list-style-type:none;}
+ul.barify {padding:0px;margin:0px;list-style-type:none;}
+ul.barify > li {float:left;}
+ul.barify.left > li {margin-right:5px;}
+
+
+/* ==== SEPARATORS ==== */
+.sep-right {border-right:3px dashed #9dadc2;}
+.sep-left  {border-left:3px dashed #9dadc2;}
+
+
+/* ==== CODE ==== */
+.mono {
+  font-family: "courier new", courier, monospace;
+}
+
+
+/* ==== CONSTANTS ==== */
+.bg       {background:#999;}
+.bg-lite  {background:#f0f0f0;}
+.bg-xlite  {background:#fafafa;}
+.bg-white {background:#fff;}
+.bg-brite {background:#ffe;}
+.bg-lite-blue {background:#f0f0fa;}
+.bg-dark  {background:#666;}
+.bg-green {background:#6c6;}
+.bg-red   {background:#c66;}
+.bg-yellow {background:#ff0 !important;}
+.bg-orange {background:#fc9;}
+
+.ol        {border:1px solid #999;}
+.ol-white  {border:1px solid #fff;}
+.ol-dark   {border:1px solid #666;}
+.ol-black  {border:1px solid #000;}
+.ol-orange {border:1px solid #fc9;}
+.ol-red    {border:1px solid #f00;}
+
+.ol-dotted {border:2px dotted #666;}
+.ol-raised {border-width:1px 3px 3px 1px !important;}
+.ol-thick {border-width:3px !important;}
+
+.none {background:none;border:none;}
+.sub, .sub td, .sub p {color:#999;}
+.sub a, .sub a:link, .sub a:active, .sub a:visited {color:#999;}
+.sub a:hover {color:#666;}
+.red {color:#f00;}
+.green {color:#090;}
+
+
+/* ==== COLORSCHEMES ==== */
+.reverse {
+  background:#666;
+  color:#fff;
+}
+
+
+

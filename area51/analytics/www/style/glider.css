@@ -1,0 +1,34 @@
+
+
+/* -- GLIDER ------------------------------------------------------------- */
+div.scroller { 
+	width: 338px; 
+	height: 700px;
+	overflow: hidden;
+  position: relative;
+}
+div.scroller div.section { /* match the size of the scroller window */		
+  width:338px;
+  height:650px;
+  overflow:hidden;
+  float:left;
+}
+div.scroller div.content {
+  width: 10000px;
+}
+
+
+div.controls a {
+  font-size: 11px;
+  color: #333;
+}
+
+/*
+div.controls {
+  margin-top: 3px;
+  height: 17px;
+  width:338px;
+  text-align: center;
+}
+
+*/

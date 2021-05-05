@@ -1,0 +1,205 @@
+/*
+ * UTIL.CSS
+ */
+
+
+/*****************************************************
+ * HTML EMULATION
+ */
+.center {text-align: center !important;}
+.right  {text-align: right !important;}
+.left   {text-align: left !important;}
+.top    {vertical-align: top !important;}
+.middle {vertical-align: middle !important;}
+.bottom {vertical-align: bottom !important;}
+.float-left  {float: left !important;}
+.float-right {float: right !important;}
+.clear       {clear: both !important;}
+.clear-right {clear: right !important;}
+.clear-left  {clear: left !important;}
+.clear-none  {clear: none !important;}
+.big    {font-size: 18px !important;}
+.bold   {font-weight: bold !important;}
+.normal {font-weight: normal !important;}
+.italic {font-style: italic !important;}
+.inline {display: inline !important;}
+.underline {text-decoration: underline !important;}
+.uppercase {text-transform: uppercase !important;}
+.lowercase {text-transform: lowercase !important;}
+.small-caps {font-variant: small-caps !important;}
+.nowrap {white-space: nowrap !important;}
+.border-collapse {border-collapse: collapse !important;}
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+
+/*****************************************************
+ * SMALL
+ */
+.small,
+.small p, .small a, .small em,
+.small ul, .small li,
+.small code, .small pre,
+.small table, .small tr, .small td, .small th,
+.small div, .small span,
+.small select, .small option, .small input, .small textarea,
+h1.small, h2.small, h3.small, h4.small, h5.small, h6.small {
+  font-size: 10px !important;
+}
+
+
+/*****************************************************
+ * PADDING
+ */
+.pad              {padding: 5px;}
+.pad-top          {padding-top: 5px;}
+.pad-right        {padding-right: 5px;}
+.pad-left         {padding-left: 5px;}
+.pad-bottom       {padding-bottom: 5px;}
+.pad-x            {padding-left: 5px; padding-right: 5px;}
+.pad-y            {padding-top: 5px; padding-bottom: 5px;}
+
+.dbl-pad          {padding: 10px}
+.dbl-pad-top      {padding-top: 10px;}
+.dbl-pad-right    {padding-right: 10px;}
+.dbl-pad-left     {padding-left: 10px;}
+.dbl-pad-bottom   {padding-bottom: 10px;}
+.dbl-pad-x        {padding-left: 10px; padding-right: 10px;}
+.dbl-pad-y        {padding-top: 10px;  padding-bottom: 10px;}
+
+.small-pad        {padding: 3px;}
+.small-pad-top    {padding-top: 3px;}
+.small-pad-right  {padding-right: 3px;}
+.small-pad-left   {padding-left: 3px;}
+.small-pad-bottom {padding-bottom: 3px;}
+.small-pad-x      {padding-left: 3px; padding-right: 3px;}
+.small-pad-y      {padding-top: 3px;  padding-bottom: 3px;}
+
+
+/*****************************************************
+ * MARGIN
+ */
+.margin              {margin: 5px;}
+.margin-top          {margin-top: 5px;}
+.margin-right        {margin-right: 5px;}
+.margin-bottom       {margin-bottom: 5px;}
+.margin-left         {margin-left: 5px;}
+.margin-x            {margin-left: 5px; margin-right: 5px;}
+.margin-y            {margin-top: 5px; margin-bottom: 5px;}
+
+.dbl-margin-top      {margin-top: 10px;}
+.dbl-margin-right    {margin-right: 10px;}
+.dbl-margin-bottom   {margin-bottom: 10px;}
+.dbl-margin-left     {margin-left: 10px;}
+.dbl-margin-x        {margin-left: 10px; margin-right: 10px;}
+.dbl-margin-y        {margin-top: 10px; margin-bottom: 10px;}
+
+.small-margin        {margin: 5px;}
+.small-margin-top    {margin-top: 3px;}
+.small-margin-right  {margin-right: 3px;}
+.small-margin-bottom {margin-bottom: 3px;}
+.small-margin-left   {margin-left: 3px;}
+.small-margin-x      {margin-left: 3px; margin-right: 3px;}
+.small-margin-y      {margin-top: 3px; margin-bottom: 3px;}
+
+
+
+
+/*****************************************************
+ * CONTAINER
+ */
+ul.flatten {
+  margin: 0px; padding: 0px; list-style-type: none;
+}
+ul.flatten li {
+  margin: 0px; padding: 0px; float: left;
+}
+
+
+
+/*****************************************************
+ * NUDGERS
+ */
+.nudge-down {position: relative; top: 2px;}
+.nudge-up   {position: relative; top: -2px;}
+
+
+/*****************************************************
+ * CONSTANT
+ */
+.sub, .sub p   {color: #666 !important;}
+.red   {color: #900 !important;}
+.green {color: #060 !important;}
+
+.bg        {background: #ccc !important;}
+.bg-lite   {background: #eee !important;}
+.bg-xlite  {background: #fafafa !important;}
+.bg-brite  {background: #ffc !important;}
+.bg-xbrite {background: #fffff0 !important;}
+.bg-dark   {background: #666 !important;}
+.bg-xdark   {background: #333 !important;}
+.bg-red    {background: #900 !important;}
+
+.reverse h1, .reverse h2, .reverse h3, 
+.reverse p, .reverse ul, .reverse
+.reverse a, .reverse a:link, .reverse a:active, .reverse a:visited {
+  color: #fff !important;
+}
+
+.ol        {border: 1px solid #999;}
+.ol-bottom {border-bottom: 1px solid #999;}
+.ol-dark   {border: 1px solid #666;}
+.ol-xdark  {border: 1px solid #333;}
+.ol-lite   {border: 1px solid #ccc;}
+.ol-xlite  {border: 1px solid #f0f0f0;}
+.ol-red    {border: 1px solid #900;}
+.ol-thick  {border-width: 3px;}
+.ol-raised {border-width: 1px 3px 3px 1px;}
+.ol-dashed {border-style: dashed;}
+.ol-link   {padding: 3px !important; border: 2px solid #666;}
+
+
+/*****************************************************
+ * DEFEATERS
+ */
+.no-border {border: none !important;}
+.none {
+  border: none !important;
+  background: none !important;
+}
+
+
+/*****************************************************
+ * SEPARATOR
+ */
+.sep-left   {border-left: 1px dotted #999;}
+.sep-right  {border-right: 1px dotted #999;}
+.sep-top    {border-top: 1px dotted #999;}
+.sep-bottom {border-bottom: 1px dotted #999;}
+
+/* requires images */
+.dot-sep-left {
+  background: url('/images/dotted-vertical.gif') repeat-y top left
+}
+.dot-sep-right {
+  background: url('/images/dotted-vertical.gif') repeat-y top right
+}
+
+
+/*****************************************************
+ * CURSOR
+ */
+.pointer {
+  cursor: pointer;
+}
+
+
+/*****************************************************
+ * SHIFT (link shifts on hover)
+ */
+a.shift:hover img {
+  position: relative;
+  left: 2px;
+}
+

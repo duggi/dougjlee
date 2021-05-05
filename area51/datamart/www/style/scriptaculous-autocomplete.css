@@ -1,0 +1,36 @@
+div.page_name_auto_complete {
+	width: 100px;
+	background: #fff url('../images/autocomplete-bg.gif') 0 0 repeat-x;
+	display: inline;
+}
+
+div.page_name_auto_complete ul {
+	border: 1px solid #9fa9ba;
+  border-top: none;
+	margin: 0;
+	padding: 0;
+	/* width: 100%; XXX: remove? */
+	list-style-type: none;
+}
+
+div.page_name_auto_complete ul li {
+	margin: 0;
+	padding: 3px;
+  color: #000;
+}
+
+div.page_name_auto_complete ul li.selected { 
+	background-color: #9fa9ba; 
+  color: #fff;
+}
+
+div.page_name_auto_complete ul strong.highlight { 
+	color: #000; 
+	margin: 0;
+	padding: 0;
+}
+
+
+div.page_name_auto_complete ul li strong {
+  color: #c00;
+}

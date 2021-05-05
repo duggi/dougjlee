@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>SuccessFactors: MyProjectName</title>
+
+  <link type="text/css" rel="stylesheet" href="style/base.css" />
+  <link type="text/css" rel="stylesheet" href="style/util.css" />
+  <link type="text/css" rel="stylesheet" href="style/custom.css" />
+
+
+  <script type="text/javascript" src="js/prototype/prototype-1.6.0.2.js"></script>
+  <script type="text/javascript" src="js/scriptaculous/scriptaculous-js-1.8.1/src/scriptaculous.js"></script>
+
+  <script type="text/javascript">
+
+function switchDimension(el) {
+  //new Effect.BlindDown('axis-x-menu')
+  new Effect.Grow('axis-x-menu', {direction:'top-right', duration:.5});
+  $('axis-x-menu').observe('click', function(){
+         new Effect.Shrink('axis-x-menu', {direction:'top-right', duration:.5})
+                                    });
+}
+  </script>
+
+</head>
+<body>
+
+<!-- ***** START PAGE ***** -->
+
+
+
+
+<!-- ** TOPO ************************************************************ -->
+
+          <div id="topo">
+
+<!-- static map -->
+<img border="0" src="iimages/topo-static.gif" id="topo-static" />
+
+<!--slider -->
+<div id="slider">
+  <div id="track" sstyle="width:150px;background-color:#000;height:1px;">
+    <div id="handle" sstyle="width:1px;height:15px;background-color:#f00;cursor:move;">
+    </div>
+  </div>
+
+  <code id="tail">from:2007</code>
+
+  <div id="track-years"></div>  
+
+</div>
+
+<!-- axis labels -->
+<img border="0" src="images/axis-x.png" id="axis-x" onclick="switchDimension(this)" />
+<img border="0" src="images/axis-y.png" id="axis-y" />
+<img border="0" src="images/axis-z.png" id="axis-z" />
+
+<div id="axis-x-menu" style="display:none;position:absolute;top:119px;left:348px;"><img border="0" src="images/axis-x-menu.png" /></div>
+          </div>
+
+<!-- ** END TOPO ******************************************************** -->
+
+
+
+<script type="text/javascript" language="javascript">
+
+// -- SLIDER ------------------------------------
+var preVal = 2007;
+var curVal = 2007;
+
+new Control.Slider('handle', 'track', {
+  range: $R(2004, 2007), values: [2004,2005,2006,2007],
+  sliderValue: 2007,
+  onSlide: function(v){  preVal=v; morphMap(v); $('tail').innerHTML = 'from:' + curVal + ' to:' + v },
+  onChange: function(v){ curVal=v; }
+});
+
+
+function morphMap(val) {
+  //alert('topo-' + val + '.gif');
+  var fileName = 'url(images/topo-' + val + '.gif)';
+  $('topo').style.backgroundImage = fileName;
+}
+
+</script>
+
+
+
+
+
+<!-- **** END PAGE ***** -->
+<img border="0" src="images/blank.gif" style="position:absolute;top:750px;"/>
+</body></html>
+

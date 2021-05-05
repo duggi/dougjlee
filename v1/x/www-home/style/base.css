@@ -1,0 +1,82 @@
+/* BASE.CSS */
+
+
+/* ==== Y RESET ==== */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+/* ==== Y BASE ==== */
+    /*bringing boldness back to headers and the strong element*/
+h1,h2,h3,h4,h5,h6,strong {font-weight:bold;}
+    /*indicating to users that more info is available */
+abbr,acronym {border-bottom:1px dotted #000;cursor:help;}
+    /*bringing italics back to the em element*/
+em {font-style:italic;}
+    /*giving blockquotes and lists room to breath*/
+blockquote,ul,ol,dl {margin:1em;}
+    /*bringing lists on to the page with breathing room */
+ol,ul,dl {margin-left:2em;}
+    /*giving OL's LIs generated numbers*/
+ol li {list-style:decimal outside;}
+    /*giving UL's LIs generated disc markers*/
+ul li {list-style:disc outside;}
+    /*giving UL's LIs generated numbers*/
+dl dd {margin-left:1em;}
+    /*restore th text props*/
+th {font-weight:bold;text-align:center;}
+    /*centered so it doesn't blend in to other content*/
+caption {text-align:center;}
+    /*so things don't run into each other*/
+p,fieldset,table {margin-bottom:1em;}
+
+
+
+/* ==== uber alles ==== */
+body {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+
+body, div, p, em,
+table, td, th,
+ul, li,
+fieldset, legend,
+input, textarea, option, select {
+  font-family: verdana,tahoma,calibri,arial,helvetica,verdana,tahoma,"sans-serif";
+  color: #333;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: helvetica, arial, calibri, geneva, sans-serif;
+  margin-bottom: 10px;
+}
+a, a:link, a:visited, a:active, a:hover {
+  color: #69f;
+  text-decoration: underline;
+}
+a:hover {
+  color: #f55;
+  text-decoration: none;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+hr.alt {border-top: 1px dotted #ccc;}
+
+/* ===== DEBUG ===== */
+code, pre {
+  font-family: "courier new", "courier", "lucida console", "monospace";
+  font-size: 11px;
+}
+pre {}
+

@@ -1,0 +1,117 @@
+/*
+ * BASE.CSS
+ */
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #ccf url('../images/body-bg.gif') no-repeat;
+}
+
+body {
+  font-size: 12px;
+  color: #666;
+}
+
+body, div, p,
+table, td, th,
+ul, li,
+input, textarea, option, select {
+  font-family: calibri, "verdana", "tahoma", "arial", "helvetica", "trebuchet", "trebuchet ms", "sans-serif";
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Franklin Gothic Medium", "arial", "helvetica", "sans serif";
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  color: #333;
+  margin: 0px 0px 15px;
+  padding: 5px 0px 5px;
+  border-bottom: 1px solid #666;
+}
+
+h2 {
+  font-size: 14px;
+  margin: 0px 0px 5px;
+  padding: 0px;
+  color: #333;
+}
+
+h3 {
+  font-size: 10px;
+  color: #666;
+  margin: 5px 0px;
+}
+
+h4, h5, h6 {
+  font-size: 13px;
+  color: #333;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+  color: #666;
+}
+a:hover {
+  color: #333;
+}
+
+input, textarea, option, select {
+  margin: 0px;
+}
+
+input, textarea {
+  padding-left: 5px;
+}
+
+pre {
+  font-family: "courier new", "courier", "lucida console", "monospace";
+  padding: 3px;
+  background: #060;
+  color: #006;
+  border: 1px dotted #ccd;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  color: #ccc;
+  padding: 0px;
+  margin: 8px 0px;
+  border: none;
+  border-top: 1px solid #999;
+}
+
+hr.alt {
+  border-top: 1px dotted #999;
+}
+
+blockquote {
+  padding: 3px;
+  margin: 3px 0px 3px 10px;
+}
+
+fieldset {
+  border: 1px solid #666;
+  margin: 0px 0px 15px;
+  padding: 8px;
+}
+
+legend {
+  padding: 3px 10px;
+  border: 1px solid #333;
+  background: none;
+  font-weight: bold;
+}
+
+div {}
+p {}
+dl {}
+dt {}
+dd {}
+textarea {}
+

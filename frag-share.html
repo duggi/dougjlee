@@ -1,0 +1,81 @@
+<div class="frag-wrapper" id="aside-share">
+
+<p>Sharing is caring! In the spirit of shameless self-promotion, I offer this link garden for your convenience. Tell a friend, or the world!</p>
+
+
+<hr class="alt" />
+
+<div class="share facebook">
+  <h2><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.dougjlee.com&amp;title=DLX%3AThe%20Doug%20Lee%20Experience"
+  onclick="window.open('DLX: The Doug Lee Experience','facebook','width=642,height=436,resizable,scrollbars=yes');"
+  target="facebook">Facebook</a></h2>
+</div>
+
+<hr class="alt" />
+
+<div class="share twitter">
+  <h2><a href="http://twitter.com/home?status=DLX%3AThe%20Doug%20Lee%20Experience%20...%20http%3A%2F%2Fwww.dougjlee.com"
+    target="_blank">Twitter</a></h2>
+</div>
+
+<hr class="alt" />
+
+<div class="share reddit">
+  <h2><a href="http://reddit.com/submit?url=http%3A%2F%2Fwww.dougjlee.com&amp;title=DLX%3AThe%20Doug%20Lee%20Experience"
+    target="_blank">Reddit</a></h2>
+</div>
+
+<hr class="alt" />
+
+<div class="share digg">
+  <h2><a href="http://digg.com/submit?url=http%3A%2F%2Fwww.dougjlee.com&amp;title=DLX%3AThe%20Doug%20Lee%20Experience"
+    target="_blank">Digg</a></h2>
+</div>
+
+<hr class="alt" />
+
+<div class="share stumbleupon">
+  <h2><a href="http://www.stumbleupon.com/submit?url=http://www.dougjlee.com&amp;title=DLX:The%20Doug%20Lee%20Experience"
+    target="_blank">StumbleUpon</a></h2>
+</div>
+
+<hr class="alt" />
+
+<div class="share delicious">
+  <h2><a href="http://delicious.com/save?jump=close&amp;v=4&amp;noui&amp;url=http%3A%2F%2Fwww.dougjlee.com&amp;title=DLX%3AThe%20Doug%20Lee%20Experience"
+    target="_blank">Delicious</a></h2>
+</div>
+
+<hr class="alt" />
+
+<div class="share email">
+  <h2><a href="mailto:?subject=DLX:%20The%20Doug%20Lee%20Experience&amp;body=Check%20out%20www.dougjlee.com%20...%20It's%20really%20cool."
+    >Email</a></h2>
+</div>
+
+
+<style>
+.share {
+  padding-left: 25px;
+  height: 20px;
+  background: transparent url('img/spritesheet.png') -10px -690px no-repeat;
+}
+.share > h2 { display: inline; }
+.share.facebook    { background-position: -10px -890px; }
+.share.twitter     { background-position: -10px -930px; }
+.share.reddit      { background-position: -10px -970px; }
+.share.digg        { background-position: -10px -1010px; }
+.share.stumbleupon { background-position: -10px -1050px; }
+.share.delicious   { background-position: -10px -1090px; }
+.share.email       { background-position: -10px -1130px; }
+</style>
+
+<script>
+$(function() {
+  $('#aside-share a').click(function(e) {
+    C.out('sharing via: ' + $(this).html() + C.C.sep + 'thank you');
+  });
+});
+</script>
+
+</div>

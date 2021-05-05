@@ -1,0 +1,77 @@
+/* BASE.CSS */
+
+
+/* --------------------------------------------------- RESET */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+
+
+/* --------------------------------------------------- RESTYLE */
+h1,h2,h3,h4,h5,h6,strong {font-weight:bold;}
+abbr,acronym {border-bottom:1px dotted #000;cursor:help;}
+em {font-style:italic;}
+blockquote,ul,ol,dl {margin:1em;}
+ol,ul,dl {margin-left:2em;}
+ol li {list-style:decimal outside;}
+ul li {list-style:disc outside;}
+dl dd {margin-left:1em;}
+th {font-weight:bold;text-align:center;}
+caption {text-align:center;}
+p,fieldset,table {margin-bottom:1em;}
+
+
+/* --------------------------------------------------- BASE */
+article, aside, figure, footer, header, hgroup, menu, nav, section {display:block;margin:0;padding:0;}
+
+body {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  color: #666;
+}
+
+body, div, p, em,
+table, td, th,
+ul, li,
+fieldset, legend,
+input, textarea, option, select {
+  font-family: calibri, tahoma, arial, helvetica, "sans-serif";
+  color: #333;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: helvetica, arial, calibri, geneva, sans-serif;
+  margin-bottom: 5px;
+}
+a, a:link, a:visited, a:active, a:hover {
+  color: #090;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:hover {
+  color: #0c0;
+  text-decoration: none;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+hr.alt {border-top: 1px dotted #999;}
+
+
+/* --------------------------------------------------- CODE */
+code, pre {
+  font-family: "courier new", "courier", "lucida console", "monospace";
+  font-size: 11px;
+}
+pre {}
+

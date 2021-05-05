@@ -1,0 +1,1241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0038)http://regdemo.bluedot.com/conList.esp -->
+<HTML><HEAD><TITLE>***Registration Enterprise: Contacts List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!--------------------------------------------------------------><!-- THIS IS THE MASTER LIST OF ALL DOUG'S REGDEMO INSANE SCRIPTS --><!-- DON'T BE A VADER HATER MAKE THE X-WING RISE --><!--------------------------------------------------------------><!-- ************************************************************ --><!-- --------------ROLLOVER SCRIPT START--------------- --><!-- ************************************************************ -->
+<SCRIPT language=javascript>
+<!-- START HIDING     
+   //---PRELOAD IMAGES---
+      
+      //---CONTACTS [CON]----------------------------------------------
+      if (document.images) {
+      conroll = new Image(); 					// Roll
+      conroll.src =  "images/txtConRoll.gif";
+
+      conout= new Image(); 					// Out
+      conout.src =  "images/txtConOut.gif";
+      }
+      
+      //---FINANCIALS [FIN]------------------------------------------------
+      if (document.images) {
+      finroll = new Image(); 					// Roll
+      finroll.src =  "images/txtFinRoll.gif";
+
+      finout = new Image(); 					// Out
+      finout.src =  "images/txtFinOut.gif";
+      }
+      
+      //---REPORTS [REP]------------------------------------------------
+      if (document.images) {
+      reproll = new Image(); 					// Roll
+      reproll.src =  "images/txtRepRoll.gif";
+
+      repout = new Image(); 					// Out
+      repout.src =  "images/txtRepOut.gif";
+      }
+      
+      //---SETUP [SET]--------------------------------------------
+      if (document.images) {
+      setroll = new Image();	 				// Roll
+      setroll.src =  "images/txtSetRoll.gif";
+
+      setout = new Image();	 				// Out
+      setout.src =  "images/txtSetOut.gif";
+      }
+
+      //---HELP {HELP]------------------------------------------------
+      if (document.images) {
+      helproll = new Image(); 					// Roll
+      helproll.src =  "images/txtHelpRoll.gif";
+
+      helpout = new Image(); 					// Out
+      helpout.src =  "images/txtHelpOut.gif";
+
+      helpoff = new Image(); 					// Off
+      helpoff.src =  "images/txtHelpOff.gif";
+      }
+
+      //---LOGOUT [LOGOUT]------------------------------------------------
+      if (document.images) {
+      logoutroll = new Image(); 				// Roll
+      logoutroll.src =  "images/txtLogoutRoll.gif";
+
+      logoutout = new Image(); 					// Out
+      logoutout.src =  "images/txtLogoutOut.gif";
+      }
+
+   //---ROLLOVER FUNCTION---
+     function imgRoll(imgName) {
+     if (document.images) {
+     document[imgName].src = eval(imgName + "roll.src");
+      }
+     }
+
+     function imgOut(imgName) {
+     if (document.images) {
+     document[imgName].src = eval(imgName + "out.src");
+     }
+    }
+   // ---ROLLOVER FUNCTION END---
+
+// STOP HIDING -->
+</SCRIPT>
+<!-- -------------<<<END OF ROLLOVER SCRIPT<<<------------------ --><!-- ************************************************************ --><!-- --------------POPUP SCRIPT--------------- --><!-- ************************************************************ -->
+<SCRIPT language=javascript>
+<!-- START HIDING
+	function popWin(popURL,popScroll,popResize,popWinW,popWinH) 
+	{
+         popWin = window.open(popURL, 'thePopWindow', 'scrollbars=' + popScroll + ',resizable=' + popResize + ',width=' + popWinW + ',height=' + popWinH);
+	 popWin.focus();
+	}
+// STOP HIDING -->
+</SCRIPT>
+<!-- -------------<<<END OF POPUP SCRIPT<<<------------------ -->
+<STYLE>HIDE ME FROM THE LAMERS A:active {
+	COLOR: rgb(0,0,255); TEXT-DECORATION: none
+}
+A:link {
+	COLOR: rgb(0,0,255); TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: rgb(0,0,255); TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: rgb(255,0,0); TEXT-DECORATION: underline
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: rgb(0,17,40); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+TABLE {
+	FONT-SIZE: 12px; COLOR: rgb(0,17,40); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+TD {
+	FONT-SIZE: 12px; COLOR: rgb(0,17,40); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+TR {
+	FONT-SIZE: 12px; COLOR: rgb(0,17,40); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+UNKNOWN {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(210,210,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.footer:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(210,210,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.footer:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(210,210,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.footer:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(80,255,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+UNKNOWN {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(210,210,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.bucket:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(210,210,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.bucket:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(210,210,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.bucket:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(255,255,255); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smGrey:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(128,128,128); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smGrey:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(128,128,128); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smGrey:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(128,128,128); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smGrey:hover {
+	FONT-SIZE: 10px; COLOR: rgb(80,80,80); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smDkGrey:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(70,70,70); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smDkGrey:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(70,70,70); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smDkGrey:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(70,70,70); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smDkGrey:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(0,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smRed:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(255,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smRed:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(255,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smRed:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(255,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+A.smRed:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(0,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.hdr0 {
+	FONT-WEIGHT: bold; FONT-SIZE: 32px; COLOR: rgb(179,179,179); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.hdr1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: rgb(128,128,128); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.hdr2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: rgb(179,179,179); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.hdr3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: rgb(0,17,40); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.hdrRed {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: rgb(255,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.strikeThru {
+	FONT-SIZE: 12px; COLOR: rgb(255,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.sub {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(128,128,128); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.subBlue {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(0,0,80); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.subBrite {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(210,210,210); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+.subRed {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: rgb(255,0,0); FONT-FAMILY: "verdana", "arial", "sans-serif"
+}
+</STYLE>
+
+<META content="MSHTML 5.50.4522.1800" name=GENERATOR></HEAD>
+<BODY bgColor=#4c9e9e leftMargin=0 topMargin=0 marginwidth="0" marginheight="0">
+<FORM><!--------------------------------------------------------><!-- THIS IS THE APPLICATION BAR AND USER BAR INCLUDE-----><!--------------------------------------------------------><!-- APP BAR | CONFERENCE ENTERPRISE -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+  <TBODY>
+  <TR><!-- BLUEDOT GRAPHIC -->
+    <TD width=253><IMG height=35 
+      src="Registration Enterprise Contacts List_files/appBarReg.gif" width=253 
+      border=0></TD><!--CLOCK CELL -->
+    <TD vAlign=center noWrap align=right width="100%"><SPAN 
+      class=subBlue>19:34:36 February 24, 
+2001&nbsp;&nbsp;</SPAN></TD></TR></TBODY></TABLE><!-- 1 PIXEL DROP SHADOW BENEATH APP BRAND BAR -->
+<TABLE height=1 cellSpacing=0 cellPadding=0 width="100%" bgColor=#272777 
+border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%"><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=1 
+      border=0></TD></TR></TBODY></TABLE><!-- USER BAR -->
+<TABLE height=25 cellSpacing=0 cellPadding=0 width="100%" bgColor=#165151 
+border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top noWrap width="80%"><!-- IDENTIFY AND PRINT THE USERNAME AND CLEARANCE --><SPAN 
+      class=sub>&nbsp;user: </SPAN><FONT face=Verdana color=#ffff00 
+      size=1><B>katieM </B></FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN 
+      class=sub>clearance: </SPAN><FONT face=Verdana color=#ffff00 size=1><B>Sys 
+      Admin</B></FONT></TD>
+    <TD vAlign=center noWrap align=right width="20%"><!-- HELP ROLLOVER --><A 
+      onmouseover="imgRoll('help')" onmouseout="imgOut('help')" 
+      href="http://regdemo.bluedot.com/calHelp.html"><IMG height=12 hspace=5 
+      src="Registration Enterprise Contacts List_files/txtHelpInit.gif" width=34 
+      align=textmiddle border=0 name=help></A> <!-- BAR SEPARATOR --><IMG 
+      src="Registration Enterprise Contacts List_files/_vertBar9x12.gif" 
+      border=0> <!--LOGOUT ROLLOVER --><A onmouseover="imgRoll('logout')" 
+      onmouseout="imgOut('logout')" 
+      href="http://regdemo.bluedot.com/calLogout.html"><IMG height=12 hspace=5 
+      src="Registration Enterprise Contacts List_files/txtLogoutInit.gif" 
+      width=30 align=textmiddle border=0 name=logout></A></TD></TR></TBODY></TABLE><!-----------------------------------------------------------------><!-- THIS IS THE TAB BAR WITH THE CONTACTS TAB ACTIVE---------><!-----------------------------------------------------------------><!-- TABS BAR -->
+<TABLE height=35 cellSpacing=0 cellPadding=0 width="100%" bgColor=#1e6c6c 
+border=0><!-- TAB ENDS AND TOP 14 PIX SPACERS -->
+  <TBODY>
+  <TR><!-- SHOW PULLDOWN FORM -->
+    <TD noWrap rowSpan=3><IMG height=20 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=1 
+      border=0> <SELECT size=1 name=pulldown> <OPTION>&gt;&nbsp;pull down to 
+        select a show...</OPTION> <OPTION>- - - - - - - - - - - - - - - - 
+        -</OPTION> <OPTION selected>Redwave 5a Users Conference SF 2001</OPTION> 
+        <OPTION>Redwave 5a Users Conference LA 2001</OPTION> <OPTION>Redwave 5a 
+        Users Conference NYC 2001</OPTION></SELECT> </TD><!-- LEFT SIDE SPACER -->
+    <TD width=20 rowSpan=3><IMG height=20 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD><!-- TAB ENDS AND TOP 14 PIX SPACERS -->
+    <TD vAlign=bottom width=12 rowSpan=3><IMG height=21 
+      src="Registration Enterprise Contacts List_files/tabActiveL.gif" width=12 
+      border=0></TD>
+    <TD width=20 height=14><IMG height=14 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD vAlign=bottom width=27 rowSpan=3><IMG height=21 
+      src="Registration Enterprise Contacts List_files/tabActiveWire.gif" 
+      width=27 border=0></TD>
+    <TD width=20 height=14><IMG height=14 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD vAlign=bottom width=27 rowSpan=3><IMG height=21 
+      src="Registration Enterprise Contacts List_files/tabWireWire.gif" width=27 
+      border=0></TD>
+    <TD width=20 height=14><IMG height=14 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD vAlign=bottom width=27 rowSpan=3><IMG height=21 
+      src="Registration Enterprise Contacts List_files/tabWireWire.gif" width=27 
+      border=0></TD>
+    <TD width=20 height=14><IMG height=14 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD vAlign=bottom width=20 rowSpan=3><IMG height=21 
+      src="Registration Enterprise Contacts List_files/tabWireR.gif" width=20 
+      border=0></TD>
+    <TD width=20 height=14><IMG height=14 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD vAlign=bottom width=27 rowSpan=3><IMG height=21 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=27 
+      border=0></TD>
+    <TD width=20 height=14><IMG height=14 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD vAlign=bottom width=20 rowSpan=3><IMG height=21 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width="100%" rowSpan=3>&nbsp;</TD></TR><!-- TAB 1 PIX LINES -->
+  <TR>
+    <TD width=20 bgColor=#4c9e9e height=1><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width=20 bgColor=#4c9e9e height=1><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width=20 bgColor=#4c9e9e height=1><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width=20 bgColor=#4c9e9e height=1><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width=20 height=1><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width=20 height=1><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD></TR><!-- TAB TEXT GRAPHICS -->
+  <TR><!-- CONTACTS [ACTIVE] -->
+    <TD vAlign=center height=20><A 
+      href="http://regdemo.bluedot.com/conList.esp"><IMG height=20 
+      src="Registration Enterprise Contacts List_files/txtConActive.gif" 
+      width=82 border=0></A></TD><!-- FINANCIALS -->
+    <TD vAlign=center height=20><A onmouseover="imgRoll('fin')" 
+      onmouseout="imgOut('fin')" 
+      href="http://regdemo.bluedot.com/finPackages.esp"><IMG height=20 
+      src="Registration Enterprise Contacts List_files/txtFinInit.gif" width=91 
+      border=0 name=fin></A></TD><!-- REPORTS -->
+    <TD vAlign=center height=20><A onmouseover="imgRoll('rep')" 
+      onmouseout="imgOut('rep')" 
+      href="http://regdemo.bluedot.com/repList.esp"><IMG height=20 
+      src="Registration Enterprise Contacts List_files/txtRepInit.gif" width=74 
+      border=0 name=rep></A></TD><!-- SETUP -->
+    <TD vAlign=center height=20><A onmouseover="imgRoll('set')" 
+      onmouseout="imgOut('set')" 
+      href="http://regdemo.bluedot.com/setFormList.esp"><IMG height=20 
+      src="Registration Enterprise Contacts List_files/txtSetInit.gif" width=57 
+      border=0 name=set></A></TD><!-- BLANK -->
+    <TD vAlign=center height=20>&nbsp;</TD><!-- BLANK -->
+    <TD vAlign=center height=20>&nbsp;</TD></TR></TBODY></TABLE><!-- BUCKET BAR -->
+<TABLE height=20 cellSpacing=0 cellPadding=0 width="100%" bgColor=#4c9e9e 
+border=0>
+  <TBODY>
+  <TR>
+    <TD class=subBrite><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+      class=bucket href="http://regdemo.bluedot.com/conList.esp">&gt; CONTACTS 
+      LIST</A> &nbsp;&nbsp;|&nbsp;&nbsp; <A class=bucket 
+      href="http://regdemo.bluedot.com/conEmailList.esp">&gt; EMAIL LISTS</A> 
+      &nbsp;&nbsp;|&nbsp;&nbsp; <A class=bucket 
+      href="http://regdemo.bluedot.com/conTemplateList.esp">&gt; EMAIL 
+      TEMPLATES</A> &nbsp;&nbsp;|&nbsp;&nbsp; <A class=bucket 
+      href="http://regdemo.bluedot.com/conEmailCampaign.esp">&gt; EMAIL 
+      CAMPAIGNS</A></TD></TR></TBODY></TABLE><!-----------------------------------------------------------------><!-- CONTENT TABLE INCLUDE THAT CONTAINS THE PRIMARY ESP CONTENT --><!-----------------------------------------------------------------><!-- 10 PIXEL SPACE BETWEEN BUCKET BAR AND CONTENT TABLE-->
+<TABLE height=10 width="100%">
+  <TBODY>
+  <TR>
+    <TD><IMG height=10 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=10 
+      border=0></TD></TR></TBODY></TABLE><!-- TITLE BAR WITH ROUNDED CORNERS -->
+<TABLE height=28 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=20 rowSpan=3><IMG height=20 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width=12 rowSpan=3><IMG height=28 
+      src="Registration Enterprise Contacts List_files/titleBarGreyR.gif" 
+      width=12 border=0></TD>
+    <TD width="100%" bgColor=#808080 height=1><IMG height=1 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD>
+    <TD width=12 rowSpan=3><IMG height=28 
+      src="Registration Enterprise Contacts List_files/titleBarGreyL.gif" 
+      width=12 border=0></TD>
+    <TD width=20 rowSpan=3><IMG height=20 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=20 
+      border=0></TD></TR><!-- TITLE BAR TEXT -->
+  <TR>
+    <TD class=titleBar noWrap width="100%" bgColor=#cccccc height=27><SPAN 
+      class=hdr1>Contacts List</SPAN></TD></TR></TBODY></TABLE><!-- MAIN CONTENT OUTER TABLE THAT CREATES ONE PIXEL OUTLINE -->
+<TABLE cellSpacing=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=18><IMG height=18 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=18 
+      border=0></TD>
+    <TD width="100%" bgColor=#808080><!-- EMBEDDED INNER TABLE THAT CONTAINS THE CONTENT -->
+      <TABLE cellSpacing=0 cellPadding=10 width="100%" bgColor=#ffffff 
+        border=0><TBODY>
+        <TR>
+          <TD width="100%">
+            <CENTER>
+            <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=sub><IMG height=10 hspace=5 
+                  src="Registration Enterprise Contacts List_files/iconPointerRightAnim.gif" 
+                  width=16 border=0><SPAN class=hdr2>CONTACTS LIST FOR 
+                  SHOW:</SPAN> <BR><SPAN class=hdrRed>REDWAVE 5A USERS 
+                  CONFERENCE</SPAN> <BR><BR>&lt;use either search box below to 
+                  generate a list of contacts. only one can be used per search. 
+                  leave the search boxes empty to see all contacts in the 
+                  system.&gt; <BR><BR></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=top noWrap align=middle width="48%">
+                  <TABLE cellSpacing=0 width="80%" bgColor=#4c9e9e border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE cellSpacing=0 cellPadding=3 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TH class=hdr3 width="100%" bgColor=#ebf5f5 
+                            colSpan=2>SEARCH</TH></TR>
+                          <TR>
+                            <TD class=subBlue noWrap align=right width="30%" 
+                            bgColor=#ffffff>find contacts with:</TD>
+                            <TD width="70%" bgColor=#ffffff><SELECT size=1 
+                              name=search> <OPTION>Last Name</OPTION> <OPTION 
+                                selected>First Name</OPTION> 
+                                <OPTION>Email</OPTION> <OPTION>Title</OPTION> 
+                                <OPTION>Company</OPTION></SELECT></TD></TR>
+                          <TR>
+                            <TD class=subBlue noWrap align=right width="30%" 
+                            bgColor=#ffffff>that:</TD>
+                            <TD width="70%" bgColor=#ffffff><SELECT size=1 
+                              name=search> <OPTION selected>Begins 
+                                With...</OPTION> 
+                              <OPTION>Contains...</OPTION></SELECT></TD></TR>
+                          <TR>
+                            <TD class=subBlue noWrap align=right width="30%" 
+                            bgColor=#ffffff>this keyword:</TD>
+                            <TD width="70%" bgColor=#ffffff><INPUT value=a 
+                              name=letter></TD></TR>
+                          <TR>
+                            <TD class=subBlue noWrap width="30%" 
+                              bgColor=#ffffff>&nbsp;</TD>
+                            <TD width="70%" bgColor=#ffffff><INPUT onclick="window.location.href='conList.esp'" type=button value=search name=search></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+                <TD class=hdr3 vAlign=top noWrap 
+                width="4%"><BR>&nbsp;OR&nbsp;&nbsp;</TD>
+                <TD vAlign=top align=middle width="48%">
+                  <TABLE cellSpacing=0 width="80%" bgColor=#4c9e9e border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE cellSpacing=0 cellPadding=3 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TH class=hdr3 width="100%" bgColor=#ebf5f5 
+                            colSpan=2>EXTENDED SEARCH</TH></TR>
+                          <TR>
+                            <TD class=subBlue noWrap align=right width="30%" 
+                            bgColor=#ffffff>users with role:</TD>
+                            <TD width="70%" bgColor=#ffffff><SELECT size=1 
+                              name=search> <OPTION selected>Invitee</OPTION> 
+                                <OPTION>Registrant</OPTION> <OPTION>VIP 
+                                Registrant</OPTION> <OPTION>Attendee</OPTION> 
+                                <OPTION>Show Manager</OPTION> 
+                                <OPTION>Exhibitor</OPTION></SELECT></TD></TR>
+                          <TR>
+                            <TD class=subBlue noWrap align=right width="30%" 
+                            bgColor=#ffffff>whose assigned <BR>entities are 
+                              <BR>ready for:</TD>
+                            <TD width="70%" bgColor=#ffffff><SELECT multiple 
+                              size=4 name=actionIds> <OPTION value="">Attendee 
+                                Registration:<OPTION 
+                                value=36535926>&nbsp;&nbsp;&nbsp;Confirm 
+                                Payment<OPTION 
+                                value=36535277>&nbsp;&nbsp;&nbsp;Demographics<OPTION 
+                                value=36535278>&nbsp;&nbsp;&nbsp;Login<OPTION 
+                                value=36535923>&nbsp;&nbsp;&nbsp;Pay 
+                                Online<OPTION 
+                                value=36535913>&nbsp;&nbsp;&nbsp;Print 
+                                Order<OPTION 
+                                value=36535279>&nbsp;&nbsp;&nbsp;Select 
+                                Package<OPTION 
+                                value=36535280>&nbsp;&nbsp;&nbsp;Select 
+                                Payment</OPTION></SELECT></TD></TR>
+                          <TR>
+                            <TD class=subBlue noWrap width="30%" 
+                              bgColor=#ffffff>&nbsp;</TD>
+                            <TD width="70%" bgColor=#ffffff><INPUT onclick="window.location.href='conList.esp'" type=button value=search name=search></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER>
+            <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><A class=smRed 
+                  href="http://regdemo.bluedot.com/conSaveList.esp"><IMG 
+                  height=20 alt="Save As A New Email List" hspace=3 
+                  src="Registration Enterprise Contacts List_files/iconContactSaveList.gif" 
+                  width=20 align=absMiddle border=0>SAVE THIS AS AN EMAIL 
+                  LIST</A> <BR><A class=smRed 
+                  href="http://regdemo.bluedot.com/conAdd.esp"><IMG height=20 
+                  alt="Create A New Contact" hspace=3 
+                  src="Registration Enterprise Contacts List_files/iconContactAdd.gif" 
+                  width=20 align=absMiddle vspace=5 border=0>CREATE A NEW 
+                  CONTACT</A></TD></TR>
+              <TR>
+                <TD class=sub><IMG height=10 hspace=5 
+                  src="Registration Enterprise Contacts List_files/iconPointerRight.gif" 
+                  width=16 border=0><SPAN class=subBlue>SEARCH RESULTS 
+                  FOR:</SPAN> <BR><SPAN class=hdrRed>CONTACTS WHO HAVE RESPONDED 
+                  TO INVITES</SPAN> <BR><BR><SPAN class=subBlue>results 1-20 of 
+                  20</SPAN> <BR><BR><SPAN class=sub>&lt;click a contact's name 
+                  in the active sorted column to edit the details. click a 
+                  contact's name in the email column to send an email.&gt; 
+                  <BR><BR></SPAN></TD></TR></TBODY></TABLE>
+            <TABLE height=446 cellSpacing=0 cellPadding=3 width="100%">
+              <TBODY>
+              <TR>
+                <TD class=sub style="BORDER-BOTTOM: #c0c0c0 1px solid" noWrap 
+                width="10%" height=19>.INFO</TD>
+                <TD class=sub style="BORDER-BOTTOM: #c0c0c0 1px solid" noWrap 
+                width="12%" height=19><A class=smDkGrey 
+                  href="http://regdemo.bluedot.com/conList.esp"><IMG height=9 
+                  alt="Sorted By Ascending | Click To Sort By Descending" 
+                  hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconArrowDown.gif" 
+                  width=9 border=0>.FIRST NAME</A></TD>
+                <TD class=sub style="BORDER-BOTTOM: #c0c0c0 1px solid" noWrap 
+                width="12%" height=19><A class=smGrey 
+                  href="http://regdemo.bluedot.com/conList.esp"><IMG height=9 
+                  alt="Sort By This Column" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconArrowDownX.gif" 
+                  width=9 border=0>.LAST NAME</A></TD>
+                <TD class=sub style="BORDER-BOTTOM: #c0c0c0 1px solid" noWrap 
+                width="12%" height=19><A class=smGrey 
+                  href="http://regdemo.bluedot.com/conList.esp"><IMG height=9 
+                  alt="Sort By This Column" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconArrowDownX.gif" 
+                  width=9 border=0>.USERNAME</A></TD>
+                <TD class=sub style="BORDER-BOTTOM: #c0c0c0 1px solid" noWrap 
+                width="25%" height=19><A class=smGrey 
+                  href="http://regdemo.bluedot.com/conList.esp"><IMG height=9 
+                  alt="Sort By This Column" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconArrowDownX.gif" 
+                  width=9 border=0>.EMAIL</A></TD>
+                <TD class=sub style="BORDER-BOTTOM: #c0c0c0 1px solid" 
+                width="20%" height=19><A class=smGrey 
+                  href="http://regdemo.bluedot.com/conList.esp"><IMG height=9 
+                  alt="Sort By This Column" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconArrowDownX.gif" 
+                  width=9 border=0>.TITLE</A></TD>
+                <TD class=sub style="BORDER-BOTTOM: #c0c0c0 1px solid" 
+                width="19%" height=19><A class=smGrey 
+                  href="http://regdemo.bluedot.com/conList.esp"><IMG height=9 
+                  alt="Sort By This Column" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconArrowDownX.gif" 
+                  width=9 border=0>.COMPANY</A></TD></TR>
+              <TR>
+                <TD width="10%" height=4><IMG height=4 
+                  src="Registration Enterprise Contacts List_files/_trans20x20.gif" 
+                  width=4 border=0></TD>
+                <TD width="12%" height=4><IMG height=4 
+                  src="Registration Enterprise Contacts List_files/_trans20x20.gif" 
+                  width=4 border=0></TD>
+                <TD width="12%" height=4><IMG height=4 
+                  src="Registration Enterprise Contacts List_files/_trans20x20.gif" 
+                  width=4 border=0></TD>
+                <TD width="12%" height=4><IMG height=4 
+                  src="Registration Enterprise Contacts List_files/_trans20x20.gif" 
+                  width=4 border=0></TD>
+                <TD width="25%" height=4><IMG height=4 
+                  src="Registration Enterprise Contacts List_files/_trans20x20.gif" 
+                  width=4 border=0></TD>
+                <TD width="20%" height=4><IMG height=4 
+                  src="Registration Enterprise Contacts List_files/_trans20x20.gif" 
+                  width=4 border=0></TD>
+                <TD width="19%" height=4><IMG height=4 
+                  src="Registration Enterprise Contacts List_files/_trans20x20.gif" 
+                  width=4 border=0></TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Aaron</A></TD>
+                <TD width="12%" height=22>Markos</TD>
+                <TD width="12%" height=22>amarkos</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>aaronm@netbase.com</A></TD>
+                <TD width="20%" height=22>Sys Ops Administrator</TD>
+                <TD width="19%" height=22>NetBase</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=1>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Aaron</A></TD>
+                <TD width="12%" height=22>Toms</TD>
+                <TD width="12%" height=22>atoms</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>atoms@datasecure.net</A></TD>
+                <TD width="20%" height=22>Data Security Technician</TD>
+                <TD width="19%" height=22>Data Security, Inc</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Aarto</A></TD>
+                <TD width="12%" height=22>Saari</TD>
+                <TD width="12%" height=22>aartosa</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>aartos@pe&amp;g.com</A></TD>
+                <TD width="20%" height=22>Sys Ops Administrator</TD>
+                <TD width="19%" height=22>PE&amp;G</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Alex</A></TD>
+                <TD width="12%" height=22>Trebel</TD>
+                <TD width="12%" height=22>alexT</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>alext@interop.com</A></TD>
+                <TD width="20%" height=22>IT Manager</TD>
+                <TD width="19%" height=22>Interop.com</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Alex</A></TD>
+                <TD width="12%" height=22>Tua</TD>
+                <TD width="12%" height=22>alexTua</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>atua@agilesys.com</A></TD>
+                <TD width="20%" height=22>IT Manager</TD>
+                <TD width="19%" height=22>Agile Systems</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Alexei</A></TD>
+                <TD width="12%" height=22>Helmbock</TD>
+                <TD width="12%" height=22>ahelmbock</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle 
+border=0>ahelmbock@comserve.com</A></TD>
+                <TD width="20%" height=22>Director of Engineering</TD>
+                <TD width="19%" height=22>Comserve, Inc.</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Alexi</A></TD>
+                <TD width="12%" height=22>Dostoeyev</TD>
+                <TD width="12%" height=22>alexid</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>adosto@ittech.com</A></TD>
+                <TD width="20%" height=22>Database Engineer</TD>
+                <TD width="19%" height=22>IT Technologies</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Alexis</A></TD>
+                <TD width="12%" height=22>Gellar</TD>
+                <TD width="12%" height=22>alex</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>alexg@agilesys.com</A></TD>
+                <TD width="20%" height=22>Database Engineer</TD>
+                <TD width="19%" height=22>Agile Systems</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Allan</A></TD>
+                <TD width="12%" height=22>Bush</TD>
+                <TD width="12%" height=22>allanb</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>allanb@netzone.com</A></TD>
+                <TD width="20%" height=22>IT Manager</TD>
+                <TD width="19%" height=22>Netzone.com</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Allan</A></TD>
+                <TD width="12%" height=22>Clark</TD>
+                <TD width="12%" height=22>aclark</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle 
+border=0>allanc@securityone.com</A></TD>
+                <TD width="20%" height=22>Systems Administrator</TD>
+                <TD width="19%" height=22>Security One</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Allan</A></TD>
+                <TD width="12%" height=22>Lewis</TD>
+                <TD width="12%" height=22>alewis</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>alewis@datalist.com</A></TD>
+                <TD width="20%" height=22>Systems Administrator</TD>
+                <TD width="19%" height=22>Datalist.com</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Albert</A></TD>
+                <TD width="12%" height=22>Chen</TD>
+                <TD width="12%" height=22>achen</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>achen@netsecure.com</A></TD>
+                <TD width="20%" height=22>Systems Administrator</TD>
+                <TD width="19%" height=22>Net Secure, Inc.</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Albert</A></TD>
+                <TD width="12%" height=22>Davies</TD>
+                <TD width="12%" height=22>adavies</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>adavies@manageme.net</A></TD>
+                <TD width="20%" height=22>Data Technician</TD>
+                <TD width="19%" height=22>Manageme.net</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Ann</A></TD>
+                <TD width="12%" height=22>McDonald</TD>
+                <TD width="12%" height=22>amcdonald</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>amcdonald@3net.com</A></TD>
+                <TD width="20%" height=22>Network Engineer</TD>
+                <TD width="19%" height=22>3net.com</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No History To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0>·<IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Anna</A></TD>
+                <TD width="12%" height=22>Park</TD>
+                <TD width="12%" height=22>apark</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>annap@irdata.com</A></TD>
+                <TD width="20%" height=22>IT Manager</TD>
+                <TD width="19%" height=22>IR Data, Inc.</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Anthony</A></TD>
+                <TD width="12%" height=22>O'Connor</TD>
+                <TD width="12%" height=22>aoconnor</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>anthonyoc@abcdata.com</A></TD>
+                <TD width="20%" height=22>CTO</TD>
+                <TD width="19%" height=22>ABCData, Inc.</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Anthony</A></TD>
+                <TD width="12%" height=22>Perkins</TD>
+                <TD width="12%" height=22>aperkins</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>aperkins@idata.com</A></TD>
+                <TD width="20%" height=22>CIO</TD>
+                <TD width="19%" height=22>Interactive Data, Inc.</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Anthony</A></TD>
+                <TD width="12%" height=22>Rogers</TD>
+                <TD width="12%" height=22>arogers</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle 
+border=0>arogers@dataminers.net</A></TD>
+                <TD width="20%" height=22>IT Technician</TD>
+                <TD width="19%" height=22>Data Miners, Inc.</TD></TR>
+              <TR bgColor=#ebf5f5>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popEmailStats.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Email Stats" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></A></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Antony</A></TD>
+                <TD width="12%" height=22>Arcioulo</TD>
+                <TD width="12%" height=22>antonya</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle 
+                border=0>aarcioulo@compudata.com</A></TD>
+                <TD width="20%" height=22>CTO</TD>
+                <TD width="19%" height=22>Computer Data, inc.</TD></TR>
+              <TR>
+                <TD class=sub noWrap align=middle width="10%" 
+                  height=22>&nbsp;<A 
+                  href="http://regdemo.bluedot.com/finPayOrderEdit.esp"><IMG 
+                  height=20 alt="View Orders" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></A>·<A 
+                  href="javascript:popWin('popChangeHistory.esp',1,1,620,400)"><IMG 
+                  height=20 alt="View Change History" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle border=0></A>·<IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD width="12%" height=22><A 
+                  href="http://regdemo.bluedot.com/conEdit.esp"><IMG height=20 
+                  alt="Edit Contact Details" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0>Azalea</A></TD>
+                <TD width="12%" height=22>Morris</TD>
+                <TD width="12%" height=22>amorris</TD>
+                <TD width="25%" height=22><A 
+                  href="http://regdemo.bluedot.com/conSendEmail.esp"><IMG 
+                  height=20 alt="Send An Email To This Contact" hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconEmail.gif" 
+                  width=20 align=absMiddle border=0>amorris@intermine.net</A></TD>
+                <TD width="20%" height=22>Director of Engineering</TD>
+                <TD width="19%" height=22>Intermine, Inc.</TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=10 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=sub><SPAN class=subBlue>results 1-20 of 
+              20</SPAN></TD></TR></TBODY></TABLE><BR><BR>
+            <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=subRed style="BORDER-BOTTOM: #c0c0c0 1px solid" noWrap 
+                width="10%">ICON LEGEND</TD>
+                <TD style="BORDER-BOTTOM: #c0c0c0 1px solid" 
+                width="10%">&nbsp;</TD>
+                <TD style="BORDER-BOTTOM: #c0c0c0 1px solid" 
+                width="10%">&nbsp;</TD>
+                <TD style="BORDER-BOTTOM: #c0c0c0 1px solid" 
+                width="10%">&nbsp;</TD>
+                <TD style="BORDER-BOTTOM: #c0c0c0 1px solid" 
+                width="10%">&nbsp;</TD></TR>
+              <TR>
+                <TD align=middle width="10%"><IMG height=20 hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconOrders.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD align=middle width="10%"><IMG height=20 hspace=3 
+                  src="Registration Enterprise Contacts List_files/iconHistory.gif" 
+                  width=20 align=absMiddle vspace=5 border=0></TD>
+                <TD align=middle width="10%"><IMG height=20 hspace=3 
+                  src="Registration Enterprise Contacts List_files/iconReqChange.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD align=middle width="10%"><IMG height=20 hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStats.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD align=middle width="10%"><FONT face=verdana size=2><IMG 
+                  height=20 hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconContactEdit.gif" 
+                  width=20 align=absMiddle border=0></FONT></TD></TR>
+              <TR>
+                <TD class=sub vAlign=top align=middle width="10%">go to 
+                  payments/orders</TD>
+                <TD class=sub vAlign=top align=middle width="10%">view 
+                history</TD>
+                <TD class=sub vAlign=top align=middle width="10%">view change 
+                  requests</TD>
+                <TD class=sub vAlign=top align=middle width="10%">view email 
+                  statistics</TD>
+                <TD class=sub vAlign=top align=middle width="10%">view/edit 
+                  personal details</TD></TR>
+              <TR>
+                <TD align=middle width="10%"></TD>
+                <TD align=middle width="10%"><IMG height=20 hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconHistoryZ.gif" 
+                  width=20 align=absMiddle border=0></TD>
+                <TD align=middle width="10%"><IMG height=20 hspace=1 
+                  src="Registration Enterprise Contacts List_files/iconReqChangeZ.gif" 
+                  width=20 align=absMiddle vspace=5 border=0></TD>
+                <TD align=middle width="10%"><IMG height=20 
+                  alt="No EMail Stats To View" hspace=2 
+                  src="Registration Enterprise Contacts List_files/iconEmailStatsZ.gif" 
+                  width=20 align=absMiddle vspace=5 border=0></TD>
+                <TD align=middle width="10%"></TD></TR>
+              <TR>
+                <TD vAlign=top align=middle width="10%"></TD>
+                <TD class=sub vAlign=top align=middle width="10%">no history 
+                  to view</TD>
+                <TD class=sub vAlign=top align=middle width="10%">no change 
+                  requests to view/edit</TD>
+                <TD class=sub vAlign=top align=middle width="10%">no email 
+                  stats to view</TD>
+                <TD vAlign=top align=middle width="10%"></TD></TR></TBODY></TABLE><!-- *************************************************************************--><!-- END CONTENT TABLE********************************************************--><!-- THIS CLOSES THE SINGLE CELL TABLE STARTED ON --_pageStart.esp--**********--><!-- *************************************************************************--></TD></TR></TBODY></TABLE><!-- END OF THE EMBEDDED CONTENT TABLE --></TD>
+    <TD width=18><IMG height=18 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=18 
+      border=0></TD></TR></TBODY></TABLE><!-----------------------------------------------------><!-- THE FOOTER INCLUDE PAGE---------------------------><!-----------------------------------------------------><!-- VERSION NUMBER -->
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=18><IMG height=18 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=18 
+      border=0></TD>
+    <TD noWrap width="50%"><SPAN class=subBrite>REGISTRATION ENTERPRISE 
+      V1.2.1</SPAN></TD>
+    <TD noWrap align=right width="50%"><SPAN class=subBrite>ENTERPRISE EVENT 
+      AUTOMATION SOFTWARE</SPAN></TD>
+    <TD width=18><IMG height=18 
+      src="Registration Enterprise Contacts List_files/_trans20x20.gif" width=18 
+      border=0></TD></TR></TBODY></TABLE><!-- COPYRIGHT TABLE -->
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width="100%">
+      <HR color=#b3b3b3 noShade SIZE=1>
+      <SPAN class=subBrite>copyright © 2000 <A class=footer target=_blank 
+      href="http://www.bluedot.com/">bluedot.com</A> · all rights reserved · 
+      this page is created and maintained by the <A class=footer target=_blank 
+      href="http://www.bluedot.com/newBluedot/corp_event_overview.htm">bluedot 
+      enterprise event system™</A> · contact us · legal notices and terms of use 
+      · privacy policy <BR><BR></SPAN></TD></TR></TBODY></TABLE></FONT>
+<CENTER></CENTER></FORM></BODY></HTML>

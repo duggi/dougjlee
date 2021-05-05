@@ -1,0 +1,104 @@
+/*
+ * CUSTOM.CSS
+ */
+
+
+/* -- CONTAINERS -------------------------------- */
+#outermost {
+  position: relative;
+}
+
+#right-rail {
+  position: absolute;
+  top: 145px;
+  left: 560px;
+  width: 390px;
+  overflow: hidden;
+}
+
+
+/* -- DASHBOARD BROWSER ------------------------- */
+#dashboard-browser-button {
+  position: absolute;
+  top: 110px;
+  left: 830px;
+}
+
+
+/* -- TOPO MAP ---------------------------------- */
+#topo {
+  background: url('***../images/topo/topo-2007.gif') 50px 20px no-repeat;
+  width: 505px;
+  height: 339px;
+  position: absolute;
+  top: 190px;
+  left: 40px;
+}
+
+#axis-x {
+  position: absolute;
+  top: 120px;
+  left: 420px;
+}
+#axis-y {
+  position: absolute;
+  top: 180px;
+  left: -10px;
+}
+#axis-z {
+  position: absolute;
+  top: -5px;
+  left: 130px;
+}
+
+#axis-x-menu {
+  position: absolute;
+  top: 120px;
+  left: 348px;
+}
+
+#slider {
+  position: absolute;
+  top: 300px;
+  left: -10px;
+}
+
+#slider code {
+  width: 140px;
+  margin-top: 3px;
+  font-size: 10px;
+  padding: 2px;
+  background: #eef;
+  border: 1px dotted #66f;
+}
+
+#track {
+  width: 160px;
+  height: 18px;
+  background: url('../images/slider-track.gif') 0 30% no-repeat;
+  cursor: e-resize;
+}
+
+#track-years {
+  position: absolute;
+  top: -15px;
+  background: url('../images/slider-track-years.gif') 0 30% no-repeat;
+  width: 167px;
+  height: 9px;
+}
+
+#handle {
+  width: 15px;
+  height: 18px;
+  background: url('../images/slider-handle.gif') 50% 0 no-repeat;
+  cursor: e-resize;
+}
+
+
+
+
+
+
+
+
+
